@@ -1,10 +1,44 @@
-# Developer Skills Library
+# Skills Library
 
-A comprehensive collection of skills for AI agents specialized in various aspects of software development.
+Collection of skills for AI agents.
+
+- [AI](./ai/) - skills for working with artificial intelligence
+- [common](./common/) - common skills for all agents
+- [development](./development/) - skills for software development
+- [documents](./documents/) - skills for creating and managing documentation (OCR, translation, structuring, technical docs, etc.)
+- [testing](./testing/) - skills for testing and QA
 
 ## Available Skills
 
-### 1. **Brainstorming** (`brainstorming/SKILL.md`)
+### AI
+
+### 14. **Artificial Intelligence Specialist** (`ai-specialist/SKILL.md`)
+
+Design and implementation of AI functionality and ML/LLM solutions.
+
+- Prompt engineering and RAG architectures
+- Model quality evaluation, safety, and reliability
+- AI system optimization and MLOps practices
+
+### 15. **AI Product Manager** (`ai-product-manager/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
+
+Product strategy and rollout of AI functionality.
+
+- Discovery and prioritization of AI features
+- KPI definition, rollout, and risk control
+- Cross-functional coordination and iterative delivery
+
+### 16. **AI Prompt Engineer** (`ai-prompt-engineer/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
+
+Prompt and context engineering for reliable LLM outputs.
+
+- Prompt templates and output format control
+- Prompt quality evaluation and benchmarking
+- RAG-aware prompting and guardrails
+
+### Common
+
+#### 1. **Brainstorming** (`brainstorming/SKILL.md`)
 
 Idea generation, creative problem solving, and brainstorming sessions.
 
@@ -12,7 +46,9 @@ Idea generation, creative problem solving, and brainstorming sessions.
 - Mind mapping
 - Multi-variant solution analysis
 
-### 2. **Software Architect** (`architect/SKILL.md`)
+### Development
+
+#### 2. **Software Architect** (`architect/SKILL.md`)
 
 System architecture design, pattern selection, and requirements analysis.
 
@@ -65,24 +101,6 @@ Database design and optimization, SQL development.
 - Stored procedures and triggers
 - Relational and NoSQL databases
 
-### 8. **Test Scenario Writer** (`test-scenario-writer/SKILL.md`)
-
-Test planning and test case development.
-
-- Test Case design
-- Boundary Value Analysis
-- Coverage planning
-- QA methodologies
-
-### 9. **Test Writer** (`test-writer/SKILL.md`)
-
-Test automation and unit, integration, and e2e test development.
-
-- Unit testing
-- Integration and e2e tests
-- CI/CD integration
-- Code coverage metrics
-
 ### 10. **MariaDB Administrator** (`mariadb-administrator/SKILL.md`) ⭐ Based on Database Developer
 
 Specialized MariaDB database administrator.
@@ -110,6 +128,8 @@ Containerization, orchestration, and deployment automation.
 - Monitoring and logging
 - Security and infrastructure optimization
 
+### Documents
+
 ### 13. **Technical Documentation Specialist** (`technical-documentation-specialist/SKILL.md`)
 
 Technical writing for product, API, and operational documentation.
@@ -118,67 +138,70 @@ Technical writing for product, API, and operational documentation.
 - API references, runbooks, and migration guides
 - Documentation quality and consistency standards
 
-### 14. **Artificial Intelligence Specialist** (`ai-specialist/SKILL.md`)
+### Testing
 
-Design and delivery of AI features and ML/LLM workflows.
+### 8. **Test Scenario Writer** (`test-scenario-writer/SKILL.md`)
 
-- Prompt engineering and RAG architectures
-- Model evaluation, safety, and reliability
-- AI system optimization and MLOps practices
+Test planning and test case development.
 
-### 15. **AI Product Manager** (`ai-product-manager/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
+- Test Case design
+- Boundary Value Analysis
+- Coverage planning
+- QA methodologies
 
-Product strategy and delivery for AI-powered features.
+### 9. **Test Writer** (`test-writer/SKILL.md`)
 
-- AI feature discovery and prioritization
-- KPI definition, rollout, and risk controls
-- Cross-functional coordination and iteration
+Test automation and unit, integration, and e2e test development.
 
-### 16. **AI Prompt Engineer** (`ai-prompt-engineer/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
-
-Prompt and context engineering for reliable LLM outputs.
-
-- Prompt templates and output schema control
-- Prompt evaluation and benchmarking
-- RAG-aware prompting and guardrails
+- Unit testing
+- Integration and e2e tests
+- CI/CD integration
+- Code coverage metrics
 
 ## Folder Structure
 
 ```text
-skills-library/
-├── brainstorming/
-│   └── SKILL.md
-├── architect/
-│   └── SKILL.md
-├── php-developer/
-│   └── SKILL.md
-├── cpp-developer/
-│   └── SKILL.md
-├── web-developer/
-│   └── SKILL.md
-├── frontend-designer/
-│   └── SKILL.md
-├── database-developer/
-│   └── SKILL.md
-├── test-scenario-writer/
-│   └── SKILL.md
-├── test-writer/
-│   └── SKILL.md
-├── mariadb-administrator/
-│   └── SKILL.md
-├── moodle-developer/
-│   └── SKILL.md
-├── devops-engineer/
-│   └── SKILL.md
-├── technical-documentation-specialist/
-│   └── SKILL.md
-├── ai-specialist/
-│   └── SKILL.md
-├── ai-product-manager/
-│   └── SKILL.md
-├── ai-prompt-engineer/
-│   └── SKILL.md
-└── README.md (this file)
+agent-skills-library/
+├── cspell.json
+├── README.md (this file)
+├── README.ru.md
+├── ai/
+│   ├── ai-product-manager/
+│   │   └── SKILL.md
+│   ├── ai-prompt-engineer/
+│   │   └── SKILL.md
+│   └── ai-specialist/
+│       └── SKILL.md
+├── common/
+│   └── brainstorming/
+│       └── SKILL.md
+├── development/
+│   ├── architect/
+│   │   └── SKILL.md
+│   ├── cpp-developer/
+│   │   └── SKILL.md
+│   ├── database-developer/
+│   │   └── SKILL.md
+│   ├── devops-engineer/
+│   │   └── SKILL.md
+│   ├── frontend-designer/
+│   │   └── SKILL.md
+│   ├── mariadb-administrator/
+│   │   └── SKILL.md
+│   ├── moodle-developer/
+│   │   └── SKILL.md
+│   ├── php-developer/
+│   │   └── SKILL.md
+│   └── web-developer/
+│       └── SKILL.md
+├── documents/
+│   └── technical-documentation-specialist/
+│       └── SKILL.md
+└── testing/
+    ├── test-scenario-writer/
+    │   └── SKILL.md
+    └── test-writer/
+        └── SKILL.md
 ```
 
 ## How to Use
@@ -198,16 +221,16 @@ OpenCode supports skill integration through:
 1. **Copying skill to project**:
 
    ```bash
-   cp -r skills-library/php-developer .opencode/skills/
+    cp -r skills-library/development/php-developer .opencode/skills/
    ```
 
 2. **In `.opencode/config.yml` configuration**:
 
    ```yaml
    skills:
-     - path: ./skills/php-developer/SKILL.md
+         - path: ./skills/development/php-developer/SKILL.md
        enabled: true
-     - path: ./skills/devops-engineer/SKILL.md
+         - path: ./skills/development/devops-engineer/SKILL.md
        enabled: true
    ```
 
@@ -228,7 +251,7 @@ Use skills as context for local LLM models during development.
 import ollama
 
 # Load skill content
-with open('skills-library/php-developer/SKILL.md', 'r') as f:
+with open('skills-library/development/php-developer/SKILL.md', 'r') as f:
     skill_context = f.read()
 
 # Build a guarded prompt with explicit sections and output policy
@@ -265,7 +288,7 @@ from pathlib import Path
 skills_context = ""
 skills_dir = Path('skills-library')
 
-for skill_file in skills_dir.glob('*/SKILL.md'):
+for skill_file in skills_dir.rglob('SKILL.md'):
     with open(skill_file, 'r') as f:
         skills_context += f.read() + "\n\n"
 
@@ -328,7 +351,7 @@ class SkillAssistant:
             print(f"Assistant: {response}")
 
 # Usage
-assistant = SkillAssistant('skills-library/devops-engineer/SKILL.md')
+assistant = SkillAssistant('skills-library/development/devops-engineer/SKILL.md')
 assistant.chat()
 ```
 
@@ -340,7 +363,7 @@ assistant.chat()
 <?php
 
 // Load skill content
-$skillContent = file_get_contents('skills-library/cpp-developer/SKILL.md');
+$skillContent = file_get_contents('skills-library/development/cpp-developer/SKILL.md');
 
 // Prepare request
 $prompt = $skillContent . "\n\nOptimize this C++ code for working with large data:\n\nvector<int> data = {...};";
@@ -379,7 +402,7 @@ class OllamaSkillAssistant {
     }
     
     private function loadSkills($skillsDir) {
-        $files = glob("$skillsDir/*/SKILL.md");
+        $files = glob("$skillsDir/*/*/SKILL.md");
         foreach ($files as $file) {
             $this->skillsContext .= file_get_contents($file) . "\n\n";
         }
@@ -411,8 +434,8 @@ class OllamaSkillAssistant {
     
     public function generateMoodle($prompt) {
         // Load only required skills
-        $moodleSkills = file_get_contents('skills-library/moodle-developer/SKILL.md');
-        $phpSkills = file_get_contents('skills-library/php-developer/SKILL.md');
+        $moodleSkills = file_get_contents('skills-library/development/moodle-developer/SKILL.md');
+        $phpSkills = file_get_contents('skills-library/development/php-developer/SKILL.md');
         
         $fullPrompt = $moodleSkills . "\n" . $phpSkills . "\n\n" . $prompt;
         
@@ -546,6 +569,8 @@ Brainstorming (base)
 ├─→ Artificial Intelligence Specialist
 │   ├─→ AI Product Manager ⭐
 │   └─→ AI Prompt Engineer ⭐
+│
+├─→ Technical Documentation Specialist (base)
 │
 ├─→ C++ Developer (base)
 ├─→ Frontend Designer (base)
