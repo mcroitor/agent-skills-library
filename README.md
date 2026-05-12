@@ -1,0 +1,663 @@
+# Developer Skills Library
+
+A comprehensive collection of skills for AI agents specialized in various aspects of software development.
+
+## Available Skills
+
+### 1. **Brainstorming** (`brainstorming/SKILL.md`)
+
+Idea generation, creative problem solving, and brainstorming sessions.
+
+- SCAMPER method
+- Mind mapping
+- Multi-variant solution analysis
+
+### 2. **Software Architect** (`architect/SKILL.md`)
+
+System architecture design, pattern selection, and requirements analysis.
+
+- Architectural patterns (MVC, CQRS, Microservices)
+- Scalability and performance
+- Security and resilience
+
+### 3. **PHP Developer** (`php-developer/SKILL.md`)
+
+PHP development, framework integration, and database operations.
+
+- PHP 8.x syntax
+- Laravel, Symfony, Slim
+- PSR standards
+- Application security
+
+### 4. **C++ Developer** (`cpp-developer/SKILL.md`)
+
+High-performance development and systems programming.
+
+- Modern C++ (C++17, C++20)
+- Smart pointers and RAII
+- STL and multithreading
+- Performance optimization
+
+### 5. **Web Developer** (`web-developer/SKILL.md`)
+
+Full-stack web application development.
+
+- Frontend and Backend development
+- REST and GraphQL APIs
+- Containerization and Deployment
+- Cloud platforms (AWS, Azure, Google Cloud)
+
+### 6. **Frontend Designer (Skeleton CSS)** (`frontend-designer/SKILL.md`)
+
+Development of minimalist, responsive user interfaces.
+
+- Skeleton CSS framework
+- Responsive design
+- Accessibility (WCAG 2.1)
+- CSS3 and semantic HTML
+
+### 7. **Database Developer** (`database-developer/SKILL.md`)
+
+Database design and optimization, SQL development.
+
+- SQL optimization and indexing
+- Normalization and schema design
+- Stored procedures and triggers
+- Relational and NoSQL databases
+
+### 8. **Test Scenario Writer** (`test-scenario-writer/SKILL.md`)
+
+Test planning and test case development.
+
+- Test Case design
+- Boundary Value Analysis
+- Coverage planning
+- QA methodologies
+
+### 9. **Test Writer** (`test-writer/SKILL.md`)
+
+Test automation and unit, integration, and e2e test development.
+
+- Unit testing
+- Integration and e2e tests
+- CI/CD integration
+- Code coverage metrics
+
+### 10. **MariaDB Administrator** (`mariadb-administrator/SKILL.md`) ⭐ Based on Database Developer
+
+Specialized MariaDB database administrator.
+
+- MariaDB configuration and optimization
+- Replication and Galera Cluster
+- Data backup and recovery
+- Performance monitoring
+
+### 11. **Moodle Developer** (`moodle-developer/SKILL.md`) ⭐⭐ Based on PHP Developer + MariaDB Administrator
+
+Moodle LMS development and customization.
+
+- Moodle plugin development
+- Theming and customization
+- External system integration
+- Moodle performance optimization
+
+### 12. **DevOps Engineer** (`devops-engineer/SKILL.md`) ⭐ Based on Web Developer
+
+Containerization, orchestration, and deployment automation.
+
+- Docker and Docker Compose
+- GitHub Actions for CI/CD
+- Monitoring and logging
+- Security and infrastructure optimization
+
+### 13. **Technical Documentation Specialist** (`technical-documentation-specialist/SKILL.md`)
+
+Technical writing for product, API, and operational documentation.
+
+- Docs-as-code and Markdown workflows
+- API references, runbooks, and migration guides
+- Documentation quality and consistency standards
+
+### 14. **Artificial Intelligence Specialist** (`ai-specialist/SKILL.md`)
+
+Design and delivery of AI features and ML/LLM workflows.
+
+- Prompt engineering and RAG architectures
+- Model evaluation, safety, and reliability
+- AI system optimization and MLOps practices
+
+### 15. **AI Product Manager** (`ai-product-manager/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
+
+Product strategy and delivery for AI-powered features.
+
+- AI feature discovery and prioritization
+- KPI definition, rollout, and risk controls
+- Cross-functional coordination and iteration
+
+### 16. **AI Prompt Engineer** (`ai-prompt-engineer/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
+
+Prompt and context engineering for reliable LLM outputs.
+
+- Prompt templates and output schema control
+- Prompt evaluation and benchmarking
+- RAG-aware prompting and guardrails
+
+## Folder Structure
+
+```text
+skills-library/
+├── brainstorming/
+│   └── SKILL.md
+├── architect/
+│   └── SKILL.md
+├── php-developer/
+│   └── SKILL.md
+├── cpp-developer/
+│   └── SKILL.md
+├── web-developer/
+│   └── SKILL.md
+├── frontend-designer/
+│   └── SKILL.md
+├── database-developer/
+│   └── SKILL.md
+├── test-scenario-writer/
+│   └── SKILL.md
+├── test-writer/
+│   └── SKILL.md
+├── mariadb-administrator/
+│   └── SKILL.md
+├── moodle-developer/
+│   └── SKILL.md
+├── devops-engineer/
+│   └── SKILL.md
+├── technical-documentation-specialist/
+│   └── SKILL.md
+├── ai-specialist/
+│   └── SKILL.md
+├── ai-product-manager/
+│   └── SKILL.md
+├── ai-prompt-engineer/
+│   └── SKILL.md
+└── README.md (this file)
+```
+
+## How to Use
+
+### In VS Code Copilot
+
+To use skills in VS Code:
+
+1. Copy the required folders to `~/.vscode/extensions/copilot/skills/` or VS Code User Extensions folder
+2. Specify the skill path in VS Code settings
+3. Address the agent by skill name
+
+### In OpenCode
+
+OpenCode supports skill integration through:
+
+1. **Copying skill to project**:
+
+   ```bash
+   cp -r skills-library/php-developer .opencode/skills/
+   ```
+
+2. **In `.opencode/config.yml` configuration**:
+
+   ```yaml
+   skills:
+     - path: ./skills/php-developer/SKILL.md
+       enabled: true
+     - path: ./skills/devops-engineer/SKILL.md
+       enabled: true
+   ```
+
+3. **Usage in development context**:
+   - Skills are automatically applied when creating new files
+   - Agent selects appropriate skill based on file type
+   - For explicit selection: `@php-developer develop controller`
+
+### Using with Ollama / llama.cpp in Scripts
+
+Use skills as context for local LLM models during development.
+
+#### Python
+
+**Basic example with Ollama**:
+
+```python
+import ollama
+
+# Load skill content
+with open('skills-library/php-developer/SKILL.md', 'r') as f:
+    skill_context = f.read()
+
+# Build a guarded prompt with explicit sections and output policy
+system_rules = (
+    "You are a senior PHP backend engineer. "
+    "Follow the skill context strictly. "
+    "If data is missing, state assumptions briefly. "
+    "Return only valid PHP code."
+)
+user_task = "Write a REST API endpoint in PHP to get user list"
+full_prompt = (
+    f"<system_rules>\n{system_rules}\n</system_rules>\n"
+    f"<skill_context>\n{skill_context}\n</skill_context>\n"
+    f"<user_task>\n{user_task}\n</user_task>"
+)
+
+# Send request with structured context
+response = ollama.generate(
+    model="codellama",
+    prompt=full_prompt,
+    stream=False
+)
+
+print(response['response'])
+```
+
+**Using multiple skills**:
+
+```python
+import ollama
+from pathlib import Path
+
+# Load multiple skills
+skills_context = ""
+skills_dir = Path('skills-library')
+
+for skill_file in skills_dir.glob('*/SKILL.md'):
+    with open(skill_file, 'r') as f:
+        skills_context += f.read() + "\n\n"
+
+# Use for code generation
+prompt = f"""{skills_context}
+
+Task: Develop a complete REST API in PHP using Laravel to manage blog posts.
+Requirements:
+- CRUD operations for posts
+- Authentication
+- Data validation
+- Error handling
+"""
+
+response = ollama.generate(
+    model="codellama",
+    prompt=prompt,
+    stream=True
+)
+
+for chunk in response:
+    print(chunk['response'], end='', flush=True)
+```
+
+**Interactive context usage**:
+
+```python
+import ollama
+
+class SkillAssistant:
+    def __init__(self, skill_path):
+        with open(skill_path, 'r') as f:
+            self.skill_context = f.read()
+        self.model = "codellama"
+    
+    def generate(self, user_prompt):
+        full_prompt = (
+            "<system_rules>\n"
+            "You are a DevOps expert. Reply concisely and with actionable steps.\n"
+            "If commands are risky, include a warning.\n"
+            "</system_rules>\n"
+            f"<skill_context>\n{self.skill_context}\n</skill_context>\n"
+            f"<user_task>\n{user_prompt}\n</user_task>"
+        )
+        response = ollama.generate(
+            model=self.model,
+            prompt=full_prompt,
+            stream=False
+        )
+        return response['response']
+    
+    def chat(self):
+        print("Type 'exit' to quit")
+        while True:
+            user_input = input("\nYou: ").strip()
+            if user_input.lower() == 'exit':
+                break
+            
+            response = self.generate(user_input)
+            print(f"Assistant: {response}")
+
+# Usage
+assistant = SkillAssistant('skills-library/devops-engineer/SKILL.md')
+assistant.chat()
+```
+
+#### PHP
+
+**Basic example with curl**:
+
+```php
+<?php
+
+// Load skill content
+$skillContent = file_get_contents('skills-library/cpp-developer/SKILL.md');
+
+// Prepare request
+$prompt = $skillContent . "\n\nOptimize this C++ code for working with large data:\n\nvector<int> data = {...};";
+
+// Send to local llama.cpp server
+$ch = curl_init('http://localhost:8000/completion');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode([
+    'prompt' => $prompt,
+    'n_predict' => 500,
+    'temperature' => 0.7
+]));
+curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+
+$response = curl_exec($ch);
+$result = json_decode($response, true);
+
+echo $result['content'];
+curl_close($ch);
+?>
+```
+
+**Using multiple skills in PHP**:
+
+```php
+<?php
+
+class OllamaSkillAssistant {
+    private $serverUrl = 'http://localhost:8000';
+    private $model = 'codellama';
+    private $skillsContext = '';
+    
+    public function __construct($skillsDir = 'skills-library') {
+        $this->loadSkills($skillsDir);
+    }
+    
+    private function loadSkills($skillsDir) {
+        $files = glob("$skillsDir/*/SKILL.md");
+        foreach ($files as $file) {
+            $this->skillsContext .= file_get_contents($file) . "\n\n";
+        }
+    }
+    
+    public function generate($prompt, $maxTokens = 1000) {
+        $systemRules = "You are a senior software engineer. Use the provided skill context strictly. Return practical, production-oriented output.";
+        $fullPrompt = "<system_rules>\n" . $systemRules . "\n</system_rules>\n"
+            . "<skill_context>\n" . $this->skillsContext . "\n</skill_context>\n"
+            . "<user_task>\n" . $prompt . "\n</user_task>";
+        
+        $ch = curl_init($this->serverUrl . '/completion');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode([
+            'prompt' => $fullPrompt,
+            'n_predict' => $maxTokens,
+            'temperature' => 0.7,
+            'stop' => ["\n\n", "---"]
+        ]));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+        
+        $response = curl_exec($ch);
+        curl_close($ch);
+        
+        $result = json_decode($response, true);
+        return $result['content'] ?? '';
+    }
+    
+    public function generateMoodle($prompt) {
+        // Load only required skills
+        $moodleSkills = file_get_contents('skills-library/moodle-developer/SKILL.md');
+        $phpSkills = file_get_contents('skills-library/php-developer/SKILL.md');
+        
+        $fullPrompt = $moodleSkills . "\n" . $phpSkills . "\n\n" . $prompt;
+        
+        return $this->generate($fullPrompt);
+    }
+}
+
+// Usage
+$assistant = new OllamaSkillAssistant();
+
+// Generate DevOps code
+$devopsCode = $assistant->generate('Create Docker Compose for application with nginx, php-fpm and postgresql');
+echo "=== DevOps Solution ===\n$devopsCode\n\n";
+
+// Generate Moodle plugin
+$moodleCode = $assistant->generateMoodle('Develop a simple Moodle plugin for creating surveys');
+echo "=== Moodle Plugin ===\n$moodleCode\n";
+?>
+```
+
+**Integration with test automation script**:
+
+```php
+<?php
+
+class TestGeneratorWithSkills {
+    private $assistant;
+    
+    public function __construct() {
+        $this->assistant = new OllamaSkillAssistant();
+    }
+    
+    public function generateTestScenarios($featureName) {
+        $prompt = <<<PROMPT
+Write test scenarios for function: $featureName
+
+Requirements:
+1. Use Test Case format from Test Scenario Writer skill
+2. Include happy path and edge cases
+3. Write at least 5 test scenarios
+PROMPT;
+        
+        return $this->assistant->generate($prompt);
+    }
+    
+    public function generatePhpUnitTests($functionSignature) {
+        $prompt = <<<PROMPT
+Based on Test Writer skill, write PHPUnit tests for function:
+
+$functionSignature
+
+Requirements:
+1. Use Arrange-Act-Assert pattern
+2. Add mocks where necessary
+3. Cover edge cases
+PROMPT;
+        
+        return $this->assistant->generate($prompt, 1500);
+    }
+}
+
+// Usage
+$generator = new TestGeneratorWithSkills();
+
+// Generate scenarios
+$scenarios = $generator->generateTestScenarios('user authentication');
+file_put_contents('test_scenarios.md', $scenarios);
+
+// Generate unit tests
+$tests = $generator->generatePhpUnitTests('public function authenticateUser($email, $password)');
+file_put_contents('AuthTest.php', $tests);
+?>
+```
+
+#### Recommended Models and Setup
+
+**Ollama Installation** (for Python):
+
+```bash
+# On macOS or Linux
+curl -fsSL https://ollama.ai/install.sh | sh
+
+# Download required model
+ollama pull codellama
+ollama pull llama2
+
+# Start server
+ollama serve
+```
+
+**llama.cpp Installation** (for API server):
+
+```bash
+# Clone repository
+git clone https://github.com/ggerganov/llama.cpp.git
+cd llama.cpp
+
+# Compile
+make
+
+# Download GGUF model and run
+./server -m model.gguf -ngl 99 --port 8000
+```
+
+**Recommended Models**:
+
+- `codellama:7b` — best choice for code generation
+- `codellama:13b` — more accurate, requires more memory
+- `mistral:latest` — fast and universal
+- `llama2:latest` — universal, good balance
+
+## Skill Dependencies
+
+Some skills are built on others and require understanding of base skills:
+
+```text
+Brainstorming (base)
+│
+├─→ Architect (base)
+│   └─→ Web Developer
+│       ├─→ DevOps Engineer ⭐
+│       └─→ Moodle Developer ⭐⭐
+│
+├─→ PHP Developer
+│   └─→ Moodle Developer ⭐⭐ (also requires MariaDB Administrator)
+│
+├─→ Database Developer
+│   └─→ MariaDB Administrator ⭐
+│       └─→ Moodle Developer ⭐⭐
+│
+├─→ Artificial Intelligence Specialist
+│   ├─→ AI Product Manager ⭐
+│   └─→ AI Prompt Engineer ⭐
+│
+├─→ C++ Developer (base)
+├─→ Frontend Designer (base)
+├─→ Web Developer
+│   ├─→ DevOps Engineer ⭐
+│   └─→ Moodle Developer ⭐⭐
+├─→ Test Scenario Writer (base)
+└─→ Test Writer (base)
+```
+
+**Legend:**
+
+- ⭐ — specialized skill (extension of base)
+- ⭐⭐ — complex skill (combination of multiple)
+
+### Usage Examples
+
+**For Brainstorming:**
+
+```text
+Help me come up with ideas for new features in the project...
+```
+
+**For Architect:**
+
+```text
+Design architecture for a scalable e-commerce application
+```
+
+**For PHP Developer:**
+
+```text
+Write a Laravel controller for user management
+```
+
+**For C++ Developer:**
+
+```text
+Optimize this algorithm in C++
+```
+
+**For MariaDB Administrator:**
+
+```text
+Help optimize MariaDB configuration for 1M requests per hour
+```
+
+**For Moodle Developer:**
+
+```text
+Develop a Moodle plugin that integrates grading system from external system
+```
+
+**For DevOps Engineer:**
+
+```text
+Create GitHub Actions workflow for automatic Docker container deployment to production
+```
+
+**For Technical Documentation Specialist:**
+
+```text
+Create an API integration guide with prerequisites, examples, and troubleshooting
+```
+
+**For Artificial Intelligence Specialist:**
+
+```text
+Design a RAG architecture for internal knowledge search with evaluation metrics
+```
+
+**For AI Product Manager:**
+
+```text
+Define KPI and rollout plan for an AI assistant feature in a SaaS product
+```
+
+**For AI Prompt Engineer:**
+
+```text
+Create and benchmark prompt variants for structured JSON output with strict schema
+```
+
+## Requirements
+
+- **For VS Code Copilot**: VS Code with Copilot extension and proper path configuration in `.vscode/settings.json`
+- **For OpenCode**: OpenCode editor with skill integration support
+- **For Ollama/llama.cpp**:
+  - [Ollama](https://ollama.ai) installed and running, or
+  - [llama.cpp](https://github.com/ggerganov/llama.cpp) compiled
+  - GGUF format model loaded (e.g., `llama2`, `mistral`, `codellama`)
+  - Minimum 8GB RAM (16GB recommended for larger models)
+
+## Extension
+
+To add new skills:
+
+1. Create new folder: `new-skill-name/`
+2. Add `SKILL.md` file with description and instructions
+3. Follow existing skill structure
+4. Update this README
+
+## Best Practices
+
+- Each skill should be narrowly specialized
+- Clearly define area of application
+- Provide step-by-step instructions
+- Document tools and technologies used
+- Regularly update skills as technologies evolve
+
+---
+
+**Version**: 1.5  
+**Created**: 2026  
+**Author**: Mihail Croitor + GitHub Copilot
