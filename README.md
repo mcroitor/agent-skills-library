@@ -130,7 +130,7 @@ Containerization, orchestration, and deployment automation.
 
 ### Documents
 
-### 13. **Technical Documentation Specialist** (`documents/technical-documentation-specialist/SKILL.md`)
+#### 13. **Technical Documentation Specialist** (`documents/technical-documentation-specialist/SKILL.md`)
 
 Technical writing for product, API, and operational documentation.
 
@@ -140,7 +140,7 @@ Technical writing for product, API, and operational documentation.
 
 ### Testing
 
-### 8. **Test Scenario Writer** (`testing/test-scenario-writer/SKILL.md`)
+#### 8. **Test Scenario Writer** (`testing/test-scenario-writer/SKILL.md`)
 
 Test planning and test case development.
 
@@ -149,7 +149,7 @@ Test planning and test case development.
 - Coverage planning
 - QA methodologies
 
-### 9. **Test Writer** (`testing/test-writer/SKILL.md`)
+#### 9. **Test Writer** (`testing/test-writer/SKILL.md`)
 
 Test automation and unit, integration, and e2e test development.
 
@@ -221,16 +221,16 @@ OpenCode supports skill integration through:
 1. **Copying skill to project**:
 
    ```bash
-    cp -r skills-library/development/php-developer .opencode/skills/
+    cp -r skills-library/development/php-developer .opencode/skills/development/
    ```
 
 2. **In `.opencode/config.yml` configuration**:
 
    ```yaml
    skills:
-         - path: ./skills/development/php-developer/SKILL.md
+     - path: ./skills/development/php-developer/SKILL.md
        enabled: true
-         - path: ./skills/development/devops-engineer/SKILL.md
+     - path: ./skills/development/devops-engineer/SKILL.md
        enabled: true
    ```
 
