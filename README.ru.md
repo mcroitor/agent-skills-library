@@ -2,17 +2,18 @@
 
 Коллекция навыков для AI агентов.
 
-- [AI](./ai/) - навыки для работы с искусственным интеллектом
-- [common](./common/) - общие навыки для всех агентов
-- [development](./development/) - навыки для разработки программного обеспечения
-- [documents](./documents/) - навыки для создания и управления документацией (OCR, перевод, структурирование, техническая документация, и т.д.)
-- [testing](./testing/) - навыки для тестирования и QA
+1. [AI](./ai/) - навыки для работы с искусственным интеллектом
+2. [common](./common/) - общие навыки для всех агентов
+3. [development](./development/) - навыки для разработки программного обеспечения
+4. [documents](./documents/) - навыки для создания и управления документацией (OCR, перевод, структурирование, техническая документация, и т.д.)
+5. [education](./education/) - навыки для обучения, создания образовательного контента и проверки знаний
+6. [testing](./testing/) - навыки для тестирования и QA
 
 ## Доступные навыки
 
-### AI
+### 1. AI
 
-#### 14. **Специалист по искусственному интеллекту** (`ai/ai-specialist/SKILL.md`)
+#### 1.1. Специалист по искусственному интеллекту (`ai/ai-specialist/SKILL.md`)
 
 Проектирование и внедрение AI-функциональности и ML/LLM решений.
 
@@ -20,7 +21,7 @@
 - Оценка качества, безопасность и надежность моделей
 - Оптимизация AI-систем и MLOps-практики
 
-#### 15. **AI Product Manager** (`ai/ai-product-manager/SKILL.md`) ⭐ производный от Специалиста по искусственному интеллекту
+#### 1.2. AI Product Manager (`ai/ai-product-manager/SKILL.md`) ⭐ производный от Специалиста по искусственному интеллекту
 
 Продуктовая стратегия и внедрение AI-функциональности.
 
@@ -28,7 +29,7 @@
 - KPI, rollout и контроль рисков
 - Кросс-функциональная координация и итерации
 
-#### 16. **AI Prompt Engineer** (`ai/ai-prompt-engineer/SKILL.md`) ⭐ производный от Специалиста по искусственному интеллекту
+#### 1.3. AI Prompt Engineer (`ai/ai-prompt-engineer/SKILL.md`) ⭐ производный от Специалиста по искусственному интеллекту
 
 Проектирование промптов и контекста для надежных ответов LLM.
 
@@ -36,9 +37,9 @@
 - Оценка качества промптов и бенчмарки
 - RAG-aware prompting и guardrails
 
-### Common
+### 2. Common
 
-#### 1. **Brainstorming** (`common/brainstorming/SKILL.md`)
+#### 2.1. Brainstorming (`common/brainstorming/SKILL.md`)
 
 Генерация идей, творческое решение проблем, мозговые штурмы.
 
@@ -46,9 +47,33 @@
 - Mind mapping
 - Анализ множества вариантов решения
 
-### Development
+#### 2.2. Problem Decomposer (`common/problem-decomposer/SKILL.md`)
 
-#### 2. **Архитектор программного обеспечения** (`development/architect/SKILL.md`)
+Структурная декомпозиция сложных задач на понятные и выполнимые шаги.
+
+- Определение границ задачи и ограничений
+- Разбиение на подзадачи и упорядочивание зависимостей
+- Контрольные точки, риски и план действий
+
+#### 2.3. Research Synthesizer (`common/research-synthesizer/SKILL.md`)
+
+Синтез нескольких источников в краткие выводы с опорой на факты.
+
+- Выделение тем и противоречий
+- Оценка уверенности в выводах
+- Практические рекомендации и открытые вопросы
+
+#### 2.4. Communication Adapter (`common/communication-adapter/SKILL.md`)
+
+Адаптация коммуникации под аудиторию и нужный уровень детализации.
+
+- Формулировка сообщения под контекст аудитории
+- Выбор формата и глубины изложения
+- Ясная фиксация решений и следующих шагов
+
+### 3. Development
+
+#### 3.1. Архитектор программного обеспечения (`development/architect/SKILL.md`)
 
 Проектирование архитектуры систем, выбор паттернов, анализ требований.
 
@@ -56,7 +81,7 @@
 - Масштабируемость и производительность
 - Безопасность и отказоустойчивость
 
-#### 3. **Разработчик PHP** (`development/php-developer/SKILL.md`)
+#### 3.2. Разработчик PHP (`development/php-developer/SKILL.md`)
 
 Разработка на PHP, работа с фреймворками, базами данных.
 
@@ -65,7 +90,7 @@
 - PSR стандарты
 - Безопасность приложений
 
-#### 4. **Разработчик C++** (`development/cpp-developer/SKILL.md`)
+#### 3.3. Разработчик C++ (`development/cpp-developer/SKILL.md`)
 
 Высокопроизводительная разработка, системное программирование.
 
@@ -74,7 +99,7 @@
 - STL и многопоточность
 - Оптимизация производительности
 
-#### 5. **Web разработчик** (`development/web-developer/SKILL.md`)
+#### 3.4. Web разработчик (`development/web-developer/SKILL.md`)
 
 Полнофункциональная разработка веб-приложений.
 
@@ -83,16 +108,43 @@
 - Containerization и Deployment
 - Облачные платформы (AWS, Azure, Google Cloud)
 
-#### 6. **Frontend дизайнер (Skeleton CSS)** (`development/frontend-designer/SKILL.md`)
+#### 3.5. Frontend Designer (базовый) (`development/frontend-designer/SKILL.md`)
 
-Разработка минималистичных, адаптивных интерфейсов.
+Базовый навык проектирования интерфейсов, независимый от конкретного CSS-фреймворка.
 
-- Skeleton CSS фреймворк
-- Responsive дизайн
-- Accessibility (WCAG 2.1)
-- CSS3 и семантический HTML
+- Подход semantic HTML-first
+- Базовые принципы responsive дизайна
+- Приоритет accessibility
+- Design tokens и переиспользуемые паттерны
 
-#### 7. **Разработчик баз данных** (`development/database-developer/SKILL.md`)
+#### 3.6. Bootstrap Designer (`development/bootstrap-designer/SKILL.md`) ⭐ производный от Frontend Designer
+
+Проектирование интерфейсов на Bootstrap для быстрого выпуска и переиспользуемых компонентов.
+
+- Bootstrap grid и композиция компонентов
+- Utility-классы для layout и spacing
+- Темизация с минимальными переопределениями
+- Адаптивность через стандартные breakpoints
+
+#### 3.7. Tailwind Designer (`development/tailwind-designer/SKILL.md`) ⭐ производный от Frontend Designer
+
+Проектирование интерфейсов на Tailwind CSS с utility-first подходом.
+
+- Композиция UI через utility-классы
+- Настройка tailwind config и токенов
+- Responsive и state-варианты
+- Масштабируемость в компонентных проектах
+
+#### 3.8. Skeleton Designer (`development/skeleton-designer/SKILL.md`) ⭐ производный от Frontend Designer
+
+Легковесное проектирование минималистичных интерфейсов на Skeleton CSS.
+
+- Минимальный размер CSS
+- 12-колоночная сетка и semantic HTML
+- Быстрое прототипирование без лишних зависимостей
+- Опциональный стартовый CSS-ассет для расширения темы
+
+#### 3.9. Разработчик баз данных (`development/database-developer/SKILL.md`)
 
 Проектирование и оптимизация баз данных, SQL разработка.
 
@@ -101,7 +153,7 @@
 - Хранимые процедуры и триггеры
 - Реляционные и NoSQL БД
 
-#### 10. **MariaDB Administrator** (`development/mariadb-administrator/SKILL.md`) ⭐ на базе Database Developer
+#### 3.10. MariaDB Administrator (`development/mariadb-administrator/SKILL.md`) ⭐ на базе Database Developer
 
 Специализированный администратор баз данных MariaDB.
 
@@ -110,7 +162,7 @@
 - Backup и восстановление данных
 - Мониторинг производительности
 
-#### 11. **Moodle Developer** (`development/moodle-developer/SKILL.md`) ⭐⭐ на базе PHP Developer + MariaDB Administrator
+#### 3.11. Moodle Developer (`development/moodle-developer/SKILL.md`) ⭐⭐ на базе PHP Developer + MariaDB Administrator
 
 Разработка и кастомизация Moodle LMS.
 
@@ -119,7 +171,7 @@
 - Интеграция внешних систем
 - Оптимизация производительности Moodle
 
-#### 12. **DevOps инженер** (`development/devops-engineer/SKILL.md`) ⭐ на базе Web Developer
+#### 3.12. DevOps инженер (`development/devops-engineer/SKILL.md`) ⭐ на базе Web Developer
 
 Контейнеризация, оркестрация и автоматизация деплоя.
 
@@ -128,9 +180,9 @@
 - Мониторинг и логирование
 - Security и оптимизация инфраструктуры
 
-### Documents
+### 4. Documents
 
-#### 13. **Специалист по технической документации** (`documents/technical-documentation-specialist/SKILL.md`)
+#### 4.1. Специалист по технической документации (`documents/technical-documentation-specialist/SKILL.md`)
 
 Написание технической документации для продуктов, API и эксплуатации.
 
@@ -138,9 +190,68 @@
 - API-референсы, runbook и migration guides
 - Единые стандарты качества документации
 
-### Testing
+### 5. Education
 
-#### 8. **Специалист по тестовым сценариям** (`testing/test-scenario-writer/SKILL.md`)
+#### 5.1. Learning Path Designer (`education/learning-path-designer/SKILL.md`)
+
+Проектирование траектории обучения, контрольных точек и стратегии прогресса.
+
+- Определение prerequisite
+- Проектирование learning outcomes
+- Планирование milestones и checkpoints
+
+#### 5.2. Curriculum Developer (`education/curriculum-developer/SKILL.md`) ⭐ производный от Learning Path Designer
+
+Проектирование структуры курса, модулей и последовательности уроков.
+
+- Curriculum mapping
+- Планирование модулей и уроков
+- Последовательности, выровненные по learning outcomes
+
+#### 5.3. Assessment Writer (`education/assessment-writer/SKILL.md`) ⭐ производный от Curriculum Developer
+
+Проектирование практических оценочных заданий и политики оценивания, с делегированием детальной разработки рубрики при необходимости.
+
+- Определение области оценочных критериев
+- Проектирование performance-based оценивания
+- Политика scoring и проверка alignment
+
+#### 5.4. Rubric Designer (`education/rubric-designer/SKILL.md`) ⭐ производный от Assessment Writer
+
+Проектирование оценочных рубрик с наблюдаемыми критериями, уровнями и калиброванной моделью scoring.
+
+- Выбор стратегии analytic/holistic rubric
+- Таблица критериев и архитектура уровней
+- Калибровка дескрипторов и проверка качества
+
+#### 5.5. Quiz Developer (`education/quiz-developer/SKILL.md`) ⭐ производный от Curriculum Developer
+
+Разработка квизов/экзаменов, создание банка вопросов и практических тестов на базе исходного материала.
+
+- Маппинг покрытия тем
+- Генерация question bank
+- Проектирование single choice и multiple select вопросов
+- Ответы и объяснения
+
+#### 5.6. Educational Content Reviewer (`education/educational-content-reviewer/SKILL.md`)
+
+Проверка учебных материалов на ясность, точность, структуру и педагогическое качество.
+
+- Проверка точности и ясности
+- Проверка покрытия и структуры
+- Приоритизация правок
+
+#### 5.7. Course Localization Specialist (`education/course-localization-specialist/SKILL.md`) ⭐ производный от Educational Content Reviewer
+
+Локализация курсов и учебных материалов под другой язык и региональный контекст.
+
+- Адаптация терминологии
+- Культурная и региональная адаптация
+- Проверка fidelity и consistency
+
+### 6. Testing
+
+#### 6.1. Специалист по тестовым сценариям (`testing/test-scenario-writer/SKILL.md`)
 
 Разработка планов тестирования и test cases.
 
@@ -149,7 +260,7 @@
 - Coverage планирование
 - QA методологии
 
-#### 9. **Специалист по написанию тестов** (`testing/test-writer/SKILL.md`)
+#### 6.2. Специалист по написанию тестов (`testing/test-writer/SKILL.md`)
 
 Автоматизация тестирования, написание unit, integration и e2e тестов.
 
@@ -173,10 +284,18 @@
 │   └── ai-specialist/
 │       └── SKILL.md
 ├── common/
-│   └── brainstorming/
+│   ├── brainstorming/
+│   │   └── SKILL.md
+│   ├── communication-adapter/
+│   │   └── SKILL.md
+│   ├── problem-decomposer/
+│   │   └── SKILL.md
+│   └── research-synthesizer/
 │       └── SKILL.md
 ├── development/
 │   ├── architect/
+│   │   └── SKILL.md
+│   ├── bootstrap-designer/
 │   │   └── SKILL.md
 │   ├── cpp-developer/
 │   │   └── SKILL.md
@@ -192,10 +311,31 @@
 │   │   └── SKILL.md
 │   ├── php-developer/
 │   │   └── SKILL.md
+│   ├── skeleton-designer/
+│   │   ├── assets/
+│   │   │   └── skeleton-designer-base.css
+│   │   └── SKILL.md
+│   ├── tailwind-designer/
+│   │   └── SKILL.md
 │   └── web-developer/
 │       └── SKILL.md
 ├── documents/
 │   └── technical-documentation-specialist/
+│       └── SKILL.md
+├── education/
+│   ├── assessment-writer/
+│   │   └── SKILL.md
+│   ├── course-localization-specialist/
+│   │   └── SKILL.md
+│   ├── curriculum-developer/
+│   │   └── SKILL.md
+│   ├── educational-content-reviewer/
+│   │   └── SKILL.md
+│   ├── learning-path-designer/
+│   │   └── SKILL.md
+│   ├── rubric-designer/
+│   │   └── SKILL.md
+│   └── quiz-developer/
 │       └── SKILL.md
 └── testing/
     ├── test-scenario-writer/
@@ -553,6 +693,9 @@ make
 
 ```text
 Brainstorming (основной)
+├─→ Problem Decomposer (основной)
+├─→ Research Synthesizer (основной)
+├─→ Communication Adapter (основной)
 │
 ├─→ Архитектор ПО (Software Architect, основной)
 │   └─→ Web Developer
@@ -571,8 +714,19 @@ Brainstorming (основной)
 │   └─→ AI Prompt Engineer ⭐
 │
 ├─→ Специалист по технической документации (Technical Documentation Specialist, основной)
+├─→ Education (основной)
+│   ├─→ Learning Path Designer (основной)
+│   │   └─→ Curriculum Developer ⭐
+│   │       ├─→ Assessment Writer ⭐
+│   │       │   └─→ Rubric Designer ⭐
+│   │       └─→ Quiz Developer ⭐
+│   └─→ Educational Content Reviewer (основной)
+│       └─→ Course Localization Specialist ⭐
 ├─→ C++ Developer (основной)
-├─→ Frontend Designer (Skeleton CSS, основной)
+├─→ Frontend Designer (основной)
+│   ├─→ Bootstrap Designer ⭐
+│   ├─→ Tailwind Designer ⭐
+│   └─→ Skeleton Designer ⭐
 ├─→ Web Developer (основной)
 │   ├─→ DevOps Engineer ⭐
 │   └─→ Moodle Developer ⭐⭐

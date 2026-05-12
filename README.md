@@ -6,13 +6,14 @@ Collection of skills for AI agents.
 - [common](./common/) - common skills for all agents
 - [development](./development/) - skills for software development
 - [documents](./documents/) - skills for creating and managing documentation (OCR, translation, structuring, technical docs, etc.)
+- [education](./education/) - skills for learning, education content creation and evaluation
 - [testing](./testing/) - skills for testing and QA
 
 ## Available Skills
 
-### AI
+### 1. AI
 
-#### 14. **Artificial Intelligence Specialist** (`ai/ai-specialist/SKILL.md`)
+#### 1.1. Artificial Intelligence Specialist (`ai/ai-specialist/SKILL.md`)
 
 Design and implementation of AI functionality and ML/LLM solutions.
 
@@ -20,7 +21,7 @@ Design and implementation of AI functionality and ML/LLM solutions.
 - Model quality evaluation, safety, and reliability
 - AI system optimization and MLOps practices
 
-#### 15. **AI Product Manager** (`ai/ai-product-manager/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
+#### 1.2. AI Product Manager (`ai/ai-product-manager/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
 
 Product strategy and rollout of AI functionality.
 
@@ -28,7 +29,7 @@ Product strategy and rollout of AI functionality.
 - KPI definition, rollout, and risk control
 - Cross-functional coordination and iterative delivery
 
-#### 16. **AI Prompt Engineer** (`ai/ai-prompt-engineer/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
+#### 1.3. AI Prompt Engineer (`ai/ai-prompt-engineer/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
 
 Prompt and context engineering for reliable LLM outputs.
 
@@ -36,9 +37,9 @@ Prompt and context engineering for reliable LLM outputs.
 - Prompt quality evaluation and benchmarking
 - RAG-aware prompting and guardrails
 
-### Common
+### 2. Common
 
-#### 1. **Brainstorming** (`common/brainstorming/SKILL.md`)
+#### 2.1. Brainstorming (`common/brainstorming/SKILL.md`)
 
 Idea generation, creative problem solving, and brainstorming sessions.
 
@@ -46,17 +47,108 @@ Idea generation, creative problem solving, and brainstorming sessions.
 - Mind mapping
 - Multi-variant solution analysis
 
-### Development
+#### 2.2. Problem Decomposer (`common/problem-decomposer/SKILL.md`)
 
-#### 2. **Software Architect** (`development/architect/SKILL.md`)
+Structured decomposition of complex problems into clear, executable steps.
 
-System architecture design, pattern selection, and requirements analysis.
+- Scope and constraints mapping
+- Subproblem segmentation and dependency ordering
+- Milestones, risks, and action planning
+
+#### 2.3. Research Synthesizer (`common/research-synthesizer/SKILL.md`)
+
+Synthesis of multiple sources into concise, evidence-based conclusions.
+
+- Theme extraction and contradiction detection
+- Confidence assessment of findings
+- Actionable recommendations and follow-up questions
+
+#### 2.4. Communication Adapter (`common/communication-adapter/SKILL.md`)
+
+Audience-aware adaptation of technical and non-technical communication.
+
+- Message framing by audience context
+- Detail-level control and format selection
+- Clear decision and next-action communication
+
+### 3. Development
+
+#### 3.1. Architect (`development/architect/SKILL.md`)
+
+Software architecture design and implementation planning.
+
+- System design and component decomposition
+- Technology selection and trade-off analysis
+- Scalability, reliability, and maintainability planning
+
+### 4. Documents
+
+### 5. Education
+
+#### 5.1. Learning Path Designer (`education/learning-path-designer/SKILL.md`)
+
+Learner journey design, milestone planning, and progression strategy.
+
+- Prerequisite mapping
+- Learning outcome design
+- Milestone and checkpoint planning
+
+#### 5.2. Curriculum Developer (`education/curriculum-developer/SKILL.md`) ⭐ Derived from Learning Path Designer
+
+Course structure design, module sequencing, and lesson planning.
+
+- Curriculum mapping
+- Module and lesson planning
+- Outcome-aligned teaching sequences
+
+#### 5.3. Assessment Writer (`education/assessment-writer/SKILL.md`) ⭐ Derived from Curriculum Developer
+
+Assessment design for practical tasks and grading policy, with rubric design delegated when detailed rubric artifacts are required.
+
+- Assessment criteria scope definition
+- Performance-based evaluation design
+- Scoring policy and alignment checks
+
+#### 5.4. Rubric Designer (`education/rubric-designer/SKILL.md`) ⭐ Derived from Assessment Writer
+
+Rubric design for observable criteria, level descriptors, and calibrated scoring.
+
+- Analytic/holistic rubric strategy
+- Criteria table and level architecture
+- Descriptor calibration and quality checks
+
+#### 5.5. Quiz Developer (`education/quiz-developer/SKILL.md`) ⭐ Derived from Curriculum Developer
+
+Quiz/exam development, question bank creation, and practice test assembly from source material.
+
+- Topic coverage mapping
+- Question bank generation
+- Single choice and multiple select item design
+- Answer keys and explanations
+
+#### 5.6. Educational Content Reviewer (`education/educational-content-reviewer/SKILL.md`)
+
+Review of learning materials for clarity, accuracy, structure, and pedagogy.
+
+- Accuracy and clarity review
+- Coverage and structure review
+- Revision prioritization
+
+#### 5.7. Course Localization Specialist (`education/course-localization-specialist/SKILL.md`) ⭐ Derived from Educational Content Reviewer
+
+Localization of courses and learning materials for language and regional context.
+
+- Terminology adaptation
+- Cultural and regional adjustment
+- Fidelity and consistency validation
+
+### 6. Testing
 
 - Architectural patterns (MVC, CQRS, Microservices)
 - Scalability and performance
 - Security and resilience
 
-#### 3. **PHP Developer** (`development/php-developer/SKILL.md`)
+#### 3.2. PHP Developer (`development/php-developer/SKILL.md`)
 
 PHP development, framework integration, and database operations.
 
@@ -65,7 +157,7 @@ PHP development, framework integration, and database operations.
 - PSR standards
 - Application security
 
-#### 4. **C++ Developer** (`development/cpp-developer/SKILL.md`)
+#### 3.3. C++ Developer (`development/cpp-developer/SKILL.md`)
 
 High-performance development and systems programming.
 
@@ -74,7 +166,7 @@ High-performance development and systems programming.
 - STL and multithreading
 - Performance optimization
 
-#### 5. **Web Developer** (`development/web-developer/SKILL.md`)
+#### 3.4. Web Developer (`development/web-developer/SKILL.md`)
 
 Full-stack web application development.
 
@@ -83,16 +175,43 @@ Full-stack web application development.
 - Containerization and Deployment
 - Cloud platforms (AWS, Azure, Google Cloud)
 
-#### 6. **Frontend Designer (Skeleton CSS)** (`development/frontend-designer/SKILL.md`)
+#### 3.5. Frontend Designer (Base) (`development/frontend-designer/SKILL.md`)
 
-Development of minimalist, responsive user interfaces.
+Base frontend interface design skill for framework-agnostic UI architecture.
 
-- Skeleton CSS framework
-- Responsive design
-- Accessibility (WCAG 2.1)
-- CSS3 and semantic HTML
+- Semantic HTML-first approach
+- Responsive design foundations
+- Accessibility-first decisions
+- Design tokens and reusable patterns
 
-#### 7. **Database Developer** (`development/database-developer/SKILL.md`)
+#### 3.6. Bootstrap Designer (`development/bootstrap-designer/SKILL.md`) ⭐ Derived from Frontend Designer
+
+Bootstrap-focused interface design for fast delivery with reusable components.
+
+- Bootstrap grid and component composition
+- Utility-class based spacing and layout
+- Theme customization with minimal overrides
+- Responsive UI with standard breakpoints
+
+#### 3.7. Tailwind Designer (`development/tailwind-designer/SKILL.md`) ⭐ Derived from Frontend Designer
+
+Tailwind-focused interface design with utility-first workflows.
+
+- Utility-driven component composition
+- Tailwind config and token mapping
+- Responsive and state variant patterns
+- Clean scaling for component-based projects
+
+#### 3.8. Skeleton Designer (`development/skeleton-designer/SKILL.md`) ⭐ Derived from Frontend Designer
+
+Lightweight minimalist interface design using Skeleton CSS.
+
+- Tiny CSS footprint
+- 12-column layout with semantic HTML
+- Fast prototyping with minimal dependencies
+- Optional starter asset for theme extension
+
+#### 3.9. Database Developer (`development/database-developer/SKILL.md`)
 
 Database design and optimization, SQL development.
 
@@ -101,7 +220,7 @@ Database design and optimization, SQL development.
 - Stored procedures and triggers
 - Relational and NoSQL databases
 
-#### 10. **MariaDB Administrator** (`development/mariadb-administrator/SKILL.md`) ⭐ Based on Database Developer
+#### 3.10. MariaDB Administrator (`development/mariadb-administrator/SKILL.md`) ⭐ Based on Database Developer
 
 Specialized MariaDB database administrator.
 
@@ -110,7 +229,7 @@ Specialized MariaDB database administrator.
 - Data backup and recovery
 - Performance monitoring
 
-#### 11. **Moodle Developer** (`development/moodle-developer/SKILL.md`) ⭐⭐ Based on PHP Developer + MariaDB Administrator
+#### 3.11. Moodle Developer (`development/moodle-developer/SKILL.md`) ⭐⭐ Based on PHP Developer + MariaDB Administrator
 
 Moodle LMS development and customization.
 
@@ -119,7 +238,7 @@ Moodle LMS development and customization.
 - External system integration
 - Moodle performance optimization
 
-#### 12. **DevOps Engineer** (`development/devops-engineer/SKILL.md`) ⭐ Based on Web Developer
+#### 3.12. DevOps Engineer (`development/devops-engineer/SKILL.md`) ⭐ Based on Web Developer
 
 Containerization, orchestration, and deployment automation.
 
@@ -128,9 +247,9 @@ Containerization, orchestration, and deployment automation.
 - Monitoring and logging
 - Security and infrastructure optimization
 
-### Documents
+### 4. Documents
 
-#### 13. **Technical Documentation Specialist** (`documents/technical-documentation-specialist/SKILL.md`)
+#### 4.1. Technical Documentation Specialist (`documents/technical-documentation-specialist/SKILL.md`)
 
 Technical writing for product, API, and operational documentation.
 
@@ -138,9 +257,9 @@ Technical writing for product, API, and operational documentation.
 - API references, runbooks, and migration guides
 - Documentation quality and consistency standards
 
-### Testing
+### 5. Testing
 
-#### 8. **Test Scenario Writer** (`testing/test-scenario-writer/SKILL.md`)
+#### 5.1. Test Scenario Writer (`testing/test-scenario-writer/SKILL.md`)
 
 Test planning and test case development.
 
@@ -149,7 +268,7 @@ Test planning and test case development.
 - Coverage planning
 - QA methodologies
 
-#### 9. **Test Writer** (`testing/test-writer/SKILL.md`)
+#### 5.2. Test Writer (`testing/test-writer/SKILL.md`)
 
 Test automation and unit, integration, and e2e test development.
 
@@ -173,10 +292,18 @@ Test automation and unit, integration, and e2e test development.
 │   └── ai-specialist/
 │       └── SKILL.md
 ├── common/
-│   └── brainstorming/
+│   ├── brainstorming/
+│   │   └── SKILL.md
+│   ├── communication-adapter/
+│   │   └── SKILL.md
+│   ├── problem-decomposer/
+│   │   └── SKILL.md
+│   └── research-synthesizer/
 │       └── SKILL.md
 ├── development/
 │   ├── architect/
+│   │   └── SKILL.md
+│   ├── bootstrap-designer/
 │   │   └── SKILL.md
 │   ├── cpp-developer/
 │   │   └── SKILL.md
@@ -191,6 +318,13 @@ Test automation and unit, integration, and e2e test development.
 │   ├── moodle-developer/
 │   │   └── SKILL.md
 │   ├── php-developer/
+│   │   └── SKILL.md
+│   ├── skeleton-designer/
+│   │   ├── assets/
+│   │   │   ├── normalize.css
+│   │   │   └── skeleton.css
+│   │   └── SKILL.md
+│   ├── tailwind-designer/
 │   │   └── SKILL.md
 │   └── web-developer/
 │       └── SKILL.md
@@ -553,6 +687,9 @@ Some skills are built on others and require understanding of base skills:
 
 ```text
 Brainstorming (base)
+├─→ Problem Decomposer (base)
+├─→ Research Synthesizer (base)
+├─→ Communication Adapter (base)
 │
 ├─→ Architect (base)
 │   └─→ Web Developer
@@ -571,9 +708,20 @@ Brainstorming (base)
 │   └─→ AI Prompt Engineer ⭐
 │
 ├─→ Technical Documentation Specialist (base)
+├─→ Education (base)
+│   ├─→ Learning Path Designer (base)
+│   │   └─→ Curriculum Developer ⭐
+│   │       ├─→ Assessment Writer ⭐
+│   │       │   └─→ Rubric Designer ⭐
+│   │       └─→ Quiz Developer ⭐
+│   └─→ Educational Content Reviewer (base)
+│       └─→ Course Localization Specialist ⭐
 │
 ├─→ C++ Developer (base)
 ├─→ Frontend Designer (base)
+│   ├─→ Bootstrap Designer ⭐
+│   ├─→ Tailwind Designer ⭐
+│   └─→ Skeleton Designer ⭐
 ├─→ Web Developer
 │   ├─→ DevOps Engineer ⭐
 │   └─→ Moodle Developer ⭐⭐
