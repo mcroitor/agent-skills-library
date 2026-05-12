@@ -73,6 +73,16 @@ Audience-aware adaptation of technical and non-technical communication.
 
 ### 3. Development
 
+#### 3.1. Architect (`development/architect/SKILL.md`)
+
+Software architecture design and implementation planning.
+
+- System design and component decomposition
+- Technology selection and trade-off analysis
+- Scalability, reliability, and maintainability planning
+
+### 4. Documents
+
 ### 5. Education
 
 #### 5.1. Learning Path Designer (`education/learning-path-designer/SKILL.md`)
