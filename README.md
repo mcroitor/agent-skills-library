@@ -708,6 +708,14 @@ Brainstorming (base)
 │   └─→ AI Prompt Engineer ⭐
 │
 ├─→ Technical Documentation Specialist (base)
+├─→ Education (base)
+│   ├─→ Learning Path Designer (base)
+│   │   └─→ Curriculum Developer ⭐
+│   │       ├─→ Assessment Writer ⭐
+│   │       │   └─→ Rubric Designer ⭐
+│   │       └─→ Quiz Developer ⭐
+│   └─→ Educational Content Reviewer (base)
+│       └─→ Course Localization Specialist ⭐
 │
 ├─→ C++ Developer (base)
 ├─→ Frontend Designer (base)
