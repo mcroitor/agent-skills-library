@@ -150,21 +150,6 @@ Localization of courses and learning materials for language and regional context
 
 #### 3.2. PHP Developer (`development/php-developer/SKILL.md`)
 
-├── education/
-│   ├── assessment-writer/
-│   │   └── SKILL.md
-│   ├── course-localization-specialist/
-│   │   └── SKILL.md
-│   ├── curriculum-developer/
-│   │   └── SKILL.md
-│   ├── educational-content-reviewer/
-│   │   └── SKILL.md
-│   ├── learning-path-designer/
-│   │   └── SKILL.md
-│   ├── rubric-designer/
-│   │   └── SKILL.md
-│   └── quiz-developer/
-│       └── SKILL.md
 PHP development, framework integration, and database operations.
 
 - PHP 8.x syntax
