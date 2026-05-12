@@ -12,7 +12,7 @@
 
 ### AI
 
-### 14. **Специалист по искусственному интеллекту** (`ai/ai-specialist/SKILL.md`)
+#### 14. **Специалист по искусственному интеллекту** (`ai/ai-specialist/SKILL.md`)
 
 Проектирование и внедрение AI-функциональности и ML/LLM решений.
 
@@ -20,7 +20,7 @@
 - Оценка качества, безопасность и надежность моделей
 - Оптимизация AI-систем и MLOps-практики
 
-### 15. **AI Product Manager** (`ai/ai-product-manager/SKILL.md`) ⭐ производный от Специалиста по искусственному интеллекту
+#### 15. **AI Product Manager** (`ai/ai-product-manager/SKILL.md`) ⭐ производный от Специалиста по искусственному интеллекту
 
 Продуктовая стратегия и внедрение AI-функциональности.
 
@@ -28,7 +28,7 @@
 - KPI, rollout и контроль рисков
 - Кросс-функциональная координация и итерации
 
-### 16. **AI Prompt Engineer** (`ai/ai-prompt-engineer/SKILL.md`) ⭐ производный от Специалиста по искусственному интеллекту
+#### 16. **AI Prompt Engineer** (`ai/ai-prompt-engineer/SKILL.md`) ⭐ производный от Специалиста по искусственному интеллекту
 
 Проектирование промптов и контекста для надежных ответов LLM.
 
@@ -56,7 +56,7 @@
 - Масштабируемость и производительность
 - Безопасность и отказоустойчивость
 
-### 3. **Разработчик PHP** (`development/php-developer/SKILL.md`)
+#### 3. **Разработчик PHP** (`development/php-developer/SKILL.md`)
 
 Разработка на PHP, работа с фреймворками, базами данных.
 
@@ -65,7 +65,7 @@
 - PSR стандарты
 - Безопасность приложений
 
-### 4. **Разработчик C++** (`development/cpp-developer/SKILL.md`)
+#### 4. **Разработчик C++** (`development/cpp-developer/SKILL.md`)
 
 Высокопроизводительная разработка, системное программирование.
 
@@ -74,7 +74,7 @@
 - STL и многопоточность
 - Оптимизация производительности
 
-### 5. **Web разработчик** (`development/web-developer/SKILL.md`)
+#### 5. **Web разработчик** (`development/web-developer/SKILL.md`)
 
 Полнофункциональная разработка веб-приложений.
 
@@ -83,7 +83,7 @@
 - Containerization и Deployment
 - Облачные платформы (AWS, Azure, Google Cloud)
 
-### 6. **Frontend дизайнер (Skeleton CSS)** (`development/frontend-designer/SKILL.md`)
+#### 6. **Frontend дизайнер (Skeleton CSS)** (`development/frontend-designer/SKILL.md`)
 
 Разработка минималистичных, адаптивных интерфейсов.
 
@@ -92,7 +92,7 @@
 - Accessibility (WCAG 2.1)
 - CSS3 и семантический HTML
 
-### 7. **Разработчик баз данных** (`development/database-developer/SKILL.md`)
+#### 7. **Разработчик баз данных** (`development/database-developer/SKILL.md`)
 
 Проектирование и оптимизация баз данных, SQL разработка.
 
@@ -101,7 +101,7 @@
 - Хранимые процедуры и триггеры
 - Реляционные и NoSQL БД
 
-### 10. **MariaDB Administrator** (`development/mariadb-administrator/SKILL.md`) ⭐ на базе Database Developer
+#### 10. **MariaDB Administrator** (`development/mariadb-administrator/SKILL.md`) ⭐ на базе Database Developer
 
 Специализированный администратор баз данных MariaDB.
 
@@ -110,7 +110,7 @@
 - Backup и восстановление данных
 - Мониторинг производительности
 
-### 11. **Moodle Developer** (`development/moodle-developer/SKILL.md`) ⭐⭐ на базе PHP Developer + MariaDB Administrator
+#### 11. **Moodle Developer** (`development/moodle-developer/SKILL.md`) ⭐⭐ на базе PHP Developer + MariaDB Administrator
 
 Разработка и кастомизация Moodle LMS.
 
@@ -119,7 +119,7 @@
 - Интеграция внешних систем
 - Оптимизация производительности Moodle
 
-### 12. **DevOps инженер** (`development/devops-engineer/SKILL.md`) ⭐ на базе Web Developer
+#### 12. **DevOps инженер** (`development/devops-engineer/SKILL.md`) ⭐ на базе Web Developer
 
 Контейнеризация, оркестрация и автоматизация деплоя.
 

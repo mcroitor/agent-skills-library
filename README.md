@@ -12,7 +12,7 @@ Collection of skills for AI agents.
 
 ### AI
 
-### 14. **Artificial Intelligence Specialist** (`ai/ai-specialist/SKILL.md`)
+#### 14. **Artificial Intelligence Specialist** (`ai/ai-specialist/SKILL.md`)
 
 Design and implementation of AI functionality and ML/LLM solutions.
 
@@ -20,7 +20,7 @@ Design and implementation of AI functionality and ML/LLM solutions.
 - Model quality evaluation, safety, and reliability
 - AI system optimization and MLOps practices
 
-### 15. **AI Product Manager** (`ai/ai-product-manager/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
+#### 15. **AI Product Manager** (`ai/ai-product-manager/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
 
 Product strategy and rollout of AI functionality.
 
@@ -28,7 +28,7 @@ Product strategy and rollout of AI functionality.
 - KPI definition, rollout, and risk control
 - Cross-functional coordination and iterative delivery
 
-### 16. **AI Prompt Engineer** (`ai/ai-prompt-engineer/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
+#### 16. **AI Prompt Engineer** (`ai/ai-prompt-engineer/SKILL.md`) ⭐ Derived from Artificial Intelligence Specialist
 
 Prompt and context engineering for reliable LLM outputs.
 
@@ -56,7 +56,7 @@ System architecture design, pattern selection, and requirements analysis.
 - Scalability and performance
 - Security and resilience
 
-### 3. **PHP Developer** (`development/php-developer/SKILL.md`)
+#### 3. **PHP Developer** (`development/php-developer/SKILL.md`)
 
 PHP development, framework integration, and database operations.
 
@@ -65,7 +65,7 @@ PHP development, framework integration, and database operations.
 - PSR standards
 - Application security
 
-### 4. **C++ Developer** (`development/cpp-developer/SKILL.md`)
+#### 4. **C++ Developer** (`development/cpp-developer/SKILL.md`)
 
 High-performance development and systems programming.
 
@@ -74,7 +74,7 @@ High-performance development and systems programming.
 - STL and multithreading
 - Performance optimization
 
-### 5. **Web Developer** (`development/web-developer/SKILL.md`)
+#### 5. **Web Developer** (`development/web-developer/SKILL.md`)
 
 Full-stack web application development.
 
@@ -83,7 +83,7 @@ Full-stack web application development.
 - Containerization and Deployment
 - Cloud platforms (AWS, Azure, Google Cloud)
 
-### 6. **Frontend Designer (Skeleton CSS)** (`development/frontend-designer/SKILL.md`)
+#### 6. **Frontend Designer (Skeleton CSS)** (`development/frontend-designer/SKILL.md`)
 
 Development of minimalist, responsive user interfaces.
 
@@ -92,7 +92,7 @@ Development of minimalist, responsive user interfaces.
 - Accessibility (WCAG 2.1)
 - CSS3 and semantic HTML
 
-### 7. **Database Developer** (`development/database-developer/SKILL.md`)
+#### 7. **Database Developer** (`development/database-developer/SKILL.md`)
 
 Database design and optimization, SQL development.
 
@@ -101,7 +101,7 @@ Database design and optimization, SQL development.
 - Stored procedures and triggers
 - Relational and NoSQL databases
 
-### 10. **MariaDB Administrator** (`development/mariadb-administrator/SKILL.md`) ⭐ Based on Database Developer
+#### 10. **MariaDB Administrator** (`development/mariadb-administrator/SKILL.md`) ⭐ Based on Database Developer
 
 Specialized MariaDB database administrator.
 
@@ -110,7 +110,7 @@ Specialized MariaDB database administrator.
 - Data backup and recovery
 - Performance monitoring
 
-### 11. **Moodle Developer** (`development/moodle-developer/SKILL.md`) ⭐⭐ Based on PHP Developer + MariaDB Administrator
+#### 11. **Moodle Developer** (`development/moodle-developer/SKILL.md`) ⭐⭐ Based on PHP Developer + MariaDB Administrator
 
 Moodle LMS development and customization.
 
@@ -119,7 +119,7 @@ Moodle LMS development and customization.
 - External system integration
 - Moodle performance optimization
 
-### 12. **DevOps Engineer** (`development/devops-engineer/SKILL.md`) ⭐ Based on Web Developer
+#### 12. **DevOps Engineer** (`development/devops-engineer/SKILL.md`) ⭐ Based on Web Developer
 
 Containerization, orchestration, and deployment automation.
 
