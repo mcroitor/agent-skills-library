@@ -21,11 +21,11 @@ A specialized education skill for designing analytic and holistic grading rubric
 
 ## Priority Rules
 - Prioritize in this order:
-	1. Criterion observability
-	2. Rubric validity
-	3. Reviewer consistency
-	4. Scoring completeness
-	5. Output compactness
+  1. Criterion observability
+  2. Rubric validity
+  3. Reviewer consistency
+  4. Scoring completeness
+  5. Output compactness
 - If priorities conflict, resolve them by following the higher-ranked item first
 
 ## Output Contract
