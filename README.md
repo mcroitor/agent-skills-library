@@ -162,14 +162,6 @@ PHP development, framework integration, and database operations.
 High-performance development and systems programming.
 
 - Modern C++ (C++17, C++20)
-├─→ Education (base)
-│   ├─→ Learning Path Designer (base)
-│   │   └─→ Curriculum Developer ⭐
-│   │       ├─→ Assessment Writer ⭐
-│   │       │   └─→ Rubric Designer ⭐
-│   │       └─→ Quiz Developer ⭐
-│   └─→ Educational Content Reviewer (base)
-│       └─→ Course Localization Specialist ⭐
 - Smart pointers and RAII
 - STL and multithreading
 - Performance optimization
