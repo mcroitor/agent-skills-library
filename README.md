@@ -161,7 +161,7 @@ Test automation and unit, integration, and e2e test development.
 ## Folder Structure
 
 ```text
-agent-skills-library/
+<repo_root>/
 ├── cspell.json
 ├── README.md (this file)
 ├── README.ru.md
