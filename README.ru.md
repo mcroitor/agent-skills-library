@@ -161,7 +161,7 @@
 ## Структура папок
 
 ```text
-agent-skills-library/
+<repo_root>/
 ├── cspell.json
 ├── README.md
 ├── README.ru.md (этот файл)
