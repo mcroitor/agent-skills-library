@@ -1,7 +1,19 @@
+---
+name: architect
+description: Design system architecture and select patterns. Use for architectural decisions, pattern selection, requirements analysis, and technical leadership.
+---
+
 # Software Architect
 
 ## Description
-A skill for designing robust software architecture. It covers requirements analysis, architecture pattern selection, component boundaries, integration strategy, and quality attributes.
+A skill for system architecture design, pattern selection, and requirements analysis.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict:
+1. System reliability and safety
+2. Maintainability and extensibility
+3. Performance and scalability
+4. Cost and time-to-market
 
 ## When to Use
 - Designing a new system architecture
@@ -19,6 +31,15 @@ A skill for designing robust software architecture. It covers requirements analy
 5. **Design interfaces** - API contracts and communication protocols
 6. **Document architecture** - diagrams, decision records, trade-offs
 7. **Run review** - validate risks, assumptions, and alternatives
+
+## Input Recovery Rules
+- Assume standard enterprise patterns when specific domain is not specified
+- Ask for clarification only when scale requirements or constraints significantly affect pattern selection
+
+## Constraints
+- Do not recommend patterns without understanding constraints
+- Do not ignore non-functional requirements
+- Do not skip documentation of architectural decisions
 
 ## Core Areas
 - Monolith, microservices, and serverless architectures

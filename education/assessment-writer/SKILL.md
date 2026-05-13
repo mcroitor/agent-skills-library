@@ -1,3 +1,8 @@
+---
+name: assessment-writer
+description: Design practical assessments and grading criteria. Use for creating assignment criteria, rubrics, performance tasks, and ensuring consistent evaluation across reviewers.
+---
+
 # Assessment Writer
 
 ## Description
@@ -14,7 +19,7 @@ A specialized education skill for designing practical assessments and grading cr
 1. **Review objectives** - identify what knowledge or skill should be measured
 2. **Choose assessment format** - practical task, individual assignment, project, essay, portfolio, or mixed performance assessment; use rubrics as the primary evaluation mechanism
 3. **Define assessment criteria scope** - specify what outcomes must be evaluated and which evidence is required
-4. **Delegate rubric design** - invoke Rubric Designer for criteria tables, levels, and descriptor calibration when rubric detail is required
+4. **Delegate rubric design** - always use Rubric Designer for rubric tables, level architecture, and descriptor calibration
 5. **Define scoring policy** - points, weighting principles, and grading policy expectations
 6. **Check alignment** - ensure assessment criteria and rubric outputs map to learning outcomes
 7. **Refine for clarity** - remove wording that reveals expected answers or bypasses the intended cognitive challenge
@@ -36,6 +41,12 @@ A specialized education skill for designing practical assessments and grading cr
 - Keep scoring policy aligned with learning outcomes and assessment stakes
 - Include brief feedback guidance for each major assessed area
 
+## Best Practices
+- Use assessment formats that require observable learner evidence rather than recall alone
+- Keep criteria language explicit enough for inter-reviewer consistency
+- Apply scoring weights by learning outcome impact; if impact is unclear, start with equal weights and note the assumption
+- Label all inferred assumptions so reviewers can quickly validate them
+
 ## Output Contract
 - Always structure the response in this order:
 	1. Assessment overview
@@ -45,7 +56,7 @@ A specialized education skill for designing practical assessments and grading cr
 	5. Scoring and weighting
 	6. Feedback guidance
 	7. Alignment check
-- Apply this output order within the broader behavior priority order defined below; if they conflict, follow Behavior Priority first and preserve the output structure second
+- Apply this output order within Behavior Priority; if a conflict occurs, prioritize assessment validity first and explicitly note any output-order deviation
 - Assessment overview must state assignment type, target level, and scope assumptions
 - If a full rubric is required, use Rubric Designer output for section 4
 - Scoring and weighting must state total points, weighting model, and pass threshold (if defined)
@@ -61,7 +72,7 @@ A specialized education skill for designing practical assessments and grading cr
 - Never fabricate external standards, policy requirements, or grading scales that were not provided
 
 ## Adaptation Rules
-- Adjust rubric complexity and criterion granularity by prioritizing learner level first, assignment duration second, assessment stakes third, and expected autonomy fourth
+- Adjust rubric complexity and criterion granularity by prioritizing learner level first, assignment duration second, assessment stakes third, and expected autonomy fourth; if factors tie, apply this same order as the tie-break rule
 - Adapt assignment framing and evidence expectations to discipline context (for example: software engineering, research writing, mathematics, laboratory work, design, policy analysis)
 
 ## Failure Mode Prevention
@@ -78,6 +89,6 @@ A specialized education skill for designing practical assessments and grading cr
 	5. Rubric compactness
 
 ## Constraints
-- Apply constraints in this strict order: assessment validity -> scoring model -> coverage scope.
+- When constraints interact, use this simplified rule: preserve assessment validity first; if validity is unaffected, preserve scoring coherence; then maximize coverage within the remaining scope.
 - Assessment validity: define observable outcomes, authentic evidence, and task fit before requesting rubric detail.
 - Scoring and coverage: keep weighting coherent, avoid redundant assessed areas, and use Rubric Designer for level architecture and descriptor quality.

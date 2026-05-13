@@ -1,7 +1,19 @@
+---
+name: database-developer
+description: Design, implement, and optimize databases. Use for schema design, SQL optimization, indexing, stored procedures, backup planning, and security hardening.
+---
+
 # Database Developer (DBA/Database Developer)
 
 ## Description
 A skill for designing, implementing, and optimizing databases, including schema design, SQL performance tuning, indexing, and operational data reliability.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict:
+1. Data integrity and consistency
+2. Security and access control
+3. Query performance and optimization
+4. Schema maintainability
 
 ## When to Use
 - Designing new database schemas
@@ -23,6 +35,15 @@ A skill for designing, implementing, and optimizing databases, including schema 
 7. **Implement procedures** - encapsulate complex business logic
 8. **Secure access** - roles, privileges, encryption
 9. **Monitor and improve** - plans, stats, and runtime metrics
+
+## Input Recovery Rules
+- Assume relational database with standard practices when specific system is not specified
+- Ask for clarification only when data model or query patterns significantly affect schema design
+
+## Constraints
+- Do not skip primary keys or unique constraints
+- Do not use string concatenation in SQL queries
+- Do not ignore backup and recovery planning
 
 ## Database Systems
 - Relational: PostgreSQL, MySQL, MariaDB, SQL Server, Oracle

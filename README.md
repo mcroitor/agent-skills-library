@@ -73,76 +73,9 @@ Audience-aware adaptation of technical and non-technical communication.
 
 ### 3. Development
 
-#### 3.1. Architect (`development/architect/SKILL.md`)
+#### 3.1. Software Architect (`development/architect/SKILL.md`)
 
-Software architecture design and implementation planning.
-
-- System design and component decomposition
-- Technology selection and trade-off analysis
-- Scalability, reliability, and maintainability planning
-
-### 4. Documents
-
-### 5. Education
-
-#### 5.1. Learning Path Designer (`education/learning-path-designer/SKILL.md`)
-
-Learner journey design, milestone planning, and progression strategy.
-
-- Prerequisite mapping
-- Learning outcome design
-- Milestone and checkpoint planning
-
-#### 5.2. Curriculum Developer (`education/curriculum-developer/SKILL.md`) ⭐ Derived from Learning Path Designer
-
-Course structure design, module sequencing, and lesson planning.
-
-- Curriculum mapping
-- Module and lesson planning
-- Outcome-aligned teaching sequences
-
-#### 5.3. Assessment Writer (`education/assessment-writer/SKILL.md`) ⭐ Derived from Curriculum Developer
-
-Assessment design for practical tasks and grading policy, with rubric design delegated when detailed rubric artifacts are required.
-
-- Assessment criteria scope definition
-- Performance-based evaluation design
-- Scoring policy and alignment checks
-
-#### 5.4. Rubric Designer (`education/rubric-designer/SKILL.md`) ⭐ Derived from Assessment Writer
-
-Rubric design for observable criteria, level descriptors, and calibrated scoring.
-
-- Analytic/holistic rubric strategy
-- Criteria table and level architecture
-- Descriptor calibration and quality checks
-
-#### 5.5. Quiz Developer (`education/quiz-developer/SKILL.md`) ⭐ Derived from Curriculum Developer
-
-Quiz/exam development, question bank creation, and practice test assembly from source material.
-
-- Topic coverage mapping
-- Question bank generation
-- Single choice and multiple select item design
-- Answer keys and explanations
-
-#### 5.6. Educational Content Reviewer (`education/educational-content-reviewer/SKILL.md`)
-
-Review of learning materials for clarity, accuracy, structure, and pedagogy.
-
-- Accuracy and clarity review
-- Coverage and structure review
-- Revision prioritization
-
-#### 5.7. Course Localization Specialist (`education/course-localization-specialist/SKILL.md`) ⭐ Derived from Educational Content Reviewer
-
-Localization of courses and learning materials for language and regional context.
-
-- Terminology adaptation
-- Cultural and regional adjustment
-- Fidelity and consistency validation
-
-### 6. Testing
+System architecture design, pattern selection, and requirements analysis.
 
 - Architectural patterns (MVC, CQRS, Microservices)
 - Scalability and performance
@@ -257,9 +190,68 @@ Technical writing for product, API, and operational documentation.
 - API references, runbooks, and migration guides
 - Documentation quality and consistency standards
 
-### 5. Testing
+### 5. Education
 
-#### 5.1. Test Scenario Writer (`testing/test-scenario-writer/SKILL.md`)
+#### 5.1. Learning Path Designer (`education/learning-path-designer/SKILL.md`)
+
+Learner journey design, milestone planning, and progression strategy.
+
+- Prerequisite mapping
+- Learning outcome design
+- Milestone and checkpoint planning
+
+#### 5.2. Curriculum Developer (`education/curriculum-developer/SKILL.md`) ⭐ Derived from Learning Path Designer
+
+Course structure design, module sequencing, and lesson planning.
+
+- Curriculum mapping
+- Module and lesson planning
+- Outcome-aligned teaching sequences
+
+#### 5.3. Assessment Writer (`education/assessment-writer/SKILL.md`) ⭐ Derived from Curriculum Developer
+
+Assessment design for practical tasks and grading policy, with rubric design delegated when detailed rubric artifacts are required.
+
+- Assessment criteria scope definition
+- Performance-based evaluation design
+- Scoring policy and alignment checks
+
+#### 5.4. Rubric Designer (`education/rubric-designer/SKILL.md`) ⭐ Derived from Assessment Writer
+
+Rubric design for observable criteria, level descriptors, and calibrated scoring.
+
+- Analytic/holistic rubric strategy
+- Criteria table and level architecture
+- Descriptor calibration and quality checks
+
+#### 5.5. Quiz Developer (`education/quiz-developer/SKILL.md`) ⭐ Derived from Curriculum Developer
+
+Quiz/exam development, question bank creation, and practice test assembly from source material.
+
+- Topic coverage mapping
+- Question bank generation
+- Single choice and multiple select item design
+- Answer keys and explanations
+
+#### 5.6. Educational Content Reviewer (`education/educational-content-reviewer/SKILL.md`)
+
+Review of learning materials for clarity, accuracy, structure, and pedagogy.
+
+- Accuracy and clarity review
+- Coverage and structure review
+- Revision prioritization
+
+#### 5.7. Course Localization Specialist (`education/course-localization-specialist/SKILL.md`) ⭐ Derived from Educational Content Reviewer
+
+Localization of courses and learning materials for language and regional context.
+
+- Terminology adaptation
+- Cultural and regional adjustment
+- Fidelity and consistency validation
+
+### 6. Testing
+
+#### 6.1. Test Scenario Writer (`testing/test-scenario-writer/SKILL.md`)
 
 Test planning and test case development.
 
@@ -268,7 +260,7 @@ Test planning and test case development.
 - Coverage planning
 - QA methodologies
 
-#### 5.2. Test Writer (`testing/test-writer/SKILL.md`)
+#### 6.2. Test Writer (`testing/test-writer/SKILL.md`)
 
 Test automation and unit, integration, and e2e test development.
 
@@ -321,8 +313,7 @@ Test automation and unit, integration, and e2e test development.
 │   │   └── SKILL.md
 │   ├── skeleton-designer/
 │   │   ├── assets/
-│   │   │   ├── normalize.css
-│   │   │   └── skeleton.css
+│   │   │   └── skeleton-designer-base.css
 │   │   └── SKILL.md
 │   ├── tailwind-designer/
 │   │   └── SKILL.md
@@ -330,6 +321,21 @@ Test automation and unit, integration, and e2e test development.
 │       └── SKILL.md
 ├── documents/
 │   └── technical-documentation-specialist/
+│       └── SKILL.md
+├── education/
+│   ├── assessment-writer/
+│   │   └── SKILL.md
+│   ├── course-localization-specialist/
+│   │   └── SKILL.md
+│   ├── curriculum-developer/
+│   │   └── SKILL.md
+│   ├── educational-content-reviewer/
+│   │   └── SKILL.md
+│   ├── learning-path-designer/
+│   │   └── SKILL.md
+│   ├── rubric-designer/
+│   │   └── SKILL.md
+│   └── quiz-developer/
 │       └── SKILL.md
 └── testing/
     ├── test-scenario-writer/

@@ -1,7 +1,19 @@
+---
+name: devops-engineer
+description: Automate deployments and infrastructure with Docker and CI/CD. Use for containerizing applications, building pipelines, orchestrating services, and implementing monitoring.
+---
+
 # DevOps Engineer
 
 ## Description
 A skill for containerization, CI/CD automation, deployment workflows, and runtime operations with Docker, Docker Compose, and GitHub Actions.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict:
+1. Security and secret management
+2. Reliability and observability
+3. Automation and repeatability
+4. Efficiency and cost optimization
 
 ## When to Use
 - Containerizing applications with Docker
@@ -20,6 +32,15 @@ A skill for containerization, CI/CD automation, deployment workflows, and runtim
 6. **Add observability** - metrics, logs, traces, alerting
 7. **Secure delivery** - secret management and image scanning
 8. **Document operations** - runbooks, rollback, incident flow
+
+## Input Recovery Rules
+- Assume standard container best practices when specific environment details are not provided
+- Ask for clarification only when deployment target or CI/CD platform is completely undefined
+
+## Constraints
+- Do not use `latest` tag for images in production
+- Do not run containers as root without explicit justification
+- Do not hardcode secrets in Dockerfiles or CI/CD configs
 
 ## Docker
 - Dockerfile best practices

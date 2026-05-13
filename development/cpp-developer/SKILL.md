@@ -1,7 +1,19 @@
+---
+name: cpp-developer
+description: Build high-performance C++ applications. Use for systems programming, performance-critical code, embedded development, game development, and native library integration.
+---
+
 # C++ Developer
 
 ## Description
 A skill for high-performance C++ development, including modern language features, memory safety patterns, concurrency, and systems-level optimization.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict:
+1. Memory safety and correctness
+2. Performance and efficiency
+3. Maintainability and modern C++ practices
+4. Portability
 
 ## When to Use
 - Building performance-critical applications
@@ -19,6 +31,15 @@ A skill for high-performance C++ development, including modern language features
 5. **Test behavior** - unit tests with GoogleTest/Catch2
 6. **Profile before tuning** - optimize real bottlenecks
 7. **Document APIs** - concise Doxygen comments where needed
+
+## Input Recovery Rules
+- Assume modern C++17/20 when standard version is not specified
+- Ask for clarification only when performance requirements or target platform significantly affects the approach
+
+## Constraints
+- Do not use raw pointers without explicit justification
+- Do not skip RAII patterns for resource management
+- Do not optimize before profiling
 
 ## Technologies and Standards
 - Modern C++ (C++17, C++20)

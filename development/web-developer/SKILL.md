@@ -1,7 +1,19 @@
+---
+name: web-developer
+description: Build full-stack web applications. Use for frontend, backend, APIs, database integration, real-time features, and cloud deployment.
+---
+
 # Web Developer
 
 ## Description
 A skill for full-cycle web development across frontend, backend, APIs, data storage, and deployment.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict:
+1. Security and data protection
+2. User experience and accessibility
+3. Code maintainability
+4. Performance optimization
 
 ## When to Use
 - Building full-featured web applications
@@ -20,6 +32,15 @@ A skill for full-cycle web development across frontend, backend, APIs, data stor
 6. **Test thoroughly** - unit, integration, and e2e
 7. **Deploy safely** - staging, production rollout, rollback plan
 8. **Monitor continuously** - logs, metrics, traces, alerts
+
+## Input Recovery Rules
+- Assume standard full-stack patterns when specific stack is not specified
+- Ask for clarification only when framework choice or deployment target significantly affects architecture
+
+## Constraints
+- Do not skip authentication and authorization
+- Do not expose sensitive data in client-side code
+- Do not skip error handling and logging
 
 ## Technologies and Stacks
 - Frontend: React, Vue, Angular, or Vanilla JavaScript

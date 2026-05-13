@@ -1,7 +1,19 @@
+---
+name: bootstrap-designer
+description: Build responsive interfaces with Bootstrap. Use for admin panels, dashboards, data-heavy interfaces, and rapid UI development with a component library.
+---
+
 # Bootstrap Designer
 
 ## Description
 A specialized frontend design skill based on Frontend Designer for building responsive interfaces with Bootstrap components and utility classes.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict:
+1. Accessibility
+2. Component reusability
+3. Responsive behavior
+4. Minimal custom CSS
 
 ## When to Use
 - Delivering UI quickly with a mature component library
@@ -19,6 +31,15 @@ A specialized frontend design skill based on Frontend Designer for building resp
 6. **Ensure accessibility** - labels, focus states, ARIA where needed
 7. **Optimize bundle** - include only needed Bootstrap assets
 8. **Validate responsiveness** - test breakpoints and component behavior
+
+## Input Recovery Rules
+- Assume Bootstrap 5.x when version is not specified
+- Ask for clarification only when specific Bootstrap components or custom theming significantly affects the approach
+
+## Constraints
+- Do not override Bootstrap styles with conflicting custom CSS
+- Do not include unused Bootstrap components
+- Do not skip accessibility testing with Bootstrap components
 
 ## Bootstrap Highlights
 - Ready-to-use component library
