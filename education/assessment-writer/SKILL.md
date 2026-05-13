@@ -19,7 +19,7 @@ A specialized education skill for designing practical assessments and grading cr
 1. **Review objectives** - identify what knowledge or skill should be measured
 2. **Choose assessment format** - practical task, individual assignment, project, essay, portfolio, or mixed performance assessment; use rubrics as the primary evaluation mechanism
 3. **Define assessment criteria scope** - specify what outcomes must be evaluated and which evidence is required
-4. **Delegate rubric design** - always use Rubric Designer for rubric tables, level architecture, and descriptor calibration
+4. **Delegate rubric design when needed** - use Rubric Designer when the deliverable requires rubric tables, level architecture, or descriptor calibration; for assessments that only need rubric requirements or criteria guidance, define those requirements here without delegating a full rubric artifact
 5. **Define scoring policy** - points, weighting principles, and grading policy expectations
 6. **Check alignment** - ensure assessment criteria and rubric outputs map to learning outcomes
 7. **Refine for clarity** - remove wording that reveals expected answers or bypasses the intended cognitive challenge
