@@ -1,7 +1,19 @@
+---
+name: skeleton-designer
+description: Build lightweight interfaces with Skeleton CSS. Use for minimalist UI, fast prototyping, semantic HTML-first layouts, and low-complexity designs.
+---
+
 # Skeleton Designer
 
 ## Description
 A specialized frontend design skill based on Frontend Designer for creating lightweight, responsive interfaces with Skeleton CSS and semantic HTML.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict:
+1. Accessibility
+2. Semantic HTML structure
+3. Minimal CSS footprint
+4. Responsive behavior
 
 ## When to Use
 - Building clean minimalist UI quickly
@@ -18,7 +30,15 @@ A specialized frontend design skill based on Frontend Designer for creating ligh
 5. **Ensure responsiveness** - mobile-first adjustments by breakpoint; if constraints conflict, prioritize accessibility first, then responsiveness, then optimization
 6. **Optimize assets** - compress images and keep CSS clean
 7. **Test browsers/accessibility** - keyboard flow and contrast
-8. **Keep implementation lean** - avoid adding external libraries or frameworks unless they are essential for functionality or performance
+
+## Input Recovery Rules
+- Assume Skeleton CSS when version is not specified
+- Ask for clarification only when specific styling requirements significantly affect the approach
+
+## Constraints
+- Do not add external libraries unless essential
+- Do not overload with custom CSS
+- Do not skip semantic HTML for visual convenience
 
 ## Skeleton CSS Highlights
 - Very small CSS footprint

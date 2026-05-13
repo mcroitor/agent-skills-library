@@ -1,7 +1,19 @@
+---
+name: moodle-developer
+description: Develop and customize Moodle LMS solutions. Use for plugin development, theme customization, API integration, performance tuning, and Moodle administration.
+---
+
 # Moodle Developer
 
 ## Description
 A skill for developing, customizing, and operating Moodle LMS solutions. It combines PHP engineering with Moodle-specific architecture, plugin development, theming, and performance tuning.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict:
+1. Data integrity and user access control
+2. Moodle API compliance
+3. Performance and scalability
+4. Maintainability and upgrade safety
 
 ## When to Use
 - Installing and configuring Moodle
@@ -22,6 +34,15 @@ A skill for developing, customizing, and operating Moodle LMS solutions. It comb
 7. **Tune performance** - cache strategy and DB optimization
 8. **Secure implementation** - validation, permissions, tokens
 9. **Document and version** - changelog and upgrade path
+
+## Input Recovery Rules
+- Assume modern Moodle (4.x+) when version is not specified
+- Ask for clarification only when plugin type or Moodle version significantly affects development approach
+
+## Constraints
+- Do not bypass Moodle APIs for database access
+- Do not skip capability checks
+- Do not ignore upgrade compatibility
 
 ## Moodle Structure
 - Core components

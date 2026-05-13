@@ -1,7 +1,19 @@
+---
+name: frontend-designer
+description: Design responsive and accessible frontend interfaces. Use for UI architecture, component systems, responsive layouts, and design system implementation.
+---
+
 # Frontend Designer
 
 ## Description
 A base skill for designing responsive, accessible, and maintainable frontend interfaces across different CSS approaches and design systems. If design decisions conflict because of time, scope, or resource constraints, prioritize accessibility first, then responsiveness, then delivery speed.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict:
+1. Accessibility
+2. Responsiveness
+3. Delivery speed
+4. Visual polish
 
 ## When to Use
 - Designing UI architecture before framework-specific implementation
@@ -19,6 +31,15 @@ A base skill for designing responsive, accessible, and maintainable frontend int
 6. **Ensure responsiveness** - mobile-first behavior and adaptive patterns, while preserving the priority order: accessibility, responsiveness, then delivery speed
 7. **Optimize assets** - compress images and keep CSS clean without unnecessary rules
 8. **Test browsers/accessibility** - keyboard flow and contrast; if a conflict remains, keep accessibility first, then responsiveness, then delivery speed
+
+## Input Recovery Rules
+- Assume mobile-first responsive design when specific breakpoints are not specified
+- Ask for clarification only when target browsers or accessibility requirements significantly affect the approach
+
+## Constraints
+- Do not sacrifice accessibility for visual polish
+- Do not use non-semantic HTML without justification
+- Do not skip keyboard navigation testing
 
 ## Framework Extension Strategy
 - Use this skill as the base for framework-specific designer skills

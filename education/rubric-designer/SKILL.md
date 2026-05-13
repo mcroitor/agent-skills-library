@@ -1,3 +1,8 @@
+---
+name: rubric-designer
+description: Design grading rubrics with observable criteria. Use for creating analytic and holistic rubrics, defining level descriptors, and ensuring consistent scoring across reviewers.
+---
+
 # Rubric Designer
 
 ## Description
@@ -26,7 +31,8 @@ A specialized education skill for designing analytic and holistic grading rubric
   3. Reviewer consistency
   4. Scoring completeness
   5. Output compactness
-- If priorities conflict, resolve them by following the higher-ranked item first
+- If priorities conflict, resolve them by strictly following the order above; when priorities feel equally relevant, prioritize criterion observability first
+- Example: if output compactness conflicts with reviewer consistency, keep reviewer consistency and reduce compactness
 
 ## Output Contract
 - Return output in this order: rubric overview, criteria table, scoring model, calibration notes, alignment check
@@ -39,6 +45,12 @@ A specialized education skill for designing analytic and holistic grading rubric
 - If assignment context is incomplete, generate a minimal viable rubric and mark unknown fields
 - Ask for clarification only when ambiguity prevents defining observable criteria or level descriptors
 - Never fabricate external standards, policy requirements, or grading scales
+
+## Constraints
+- Apply constraints in this sequence: descriptor validity first, then scoring consistency, then format compactness
+- Do not output criteria that are not observable in submitted evidence
+- Do not use overlapping descriptors that can map to multiple levels simultaneously
+- Do not produce inconsistent level counts across criteria unless explicitly requested
 
 ## Criterion Quality Rules
 - Each criterion measures exactly one observable competency
@@ -65,3 +77,9 @@ A specialized education skill for designing analytic and holistic grading rubric
 - Objective-to-criterion mapping
 - Descriptor calibration
 - Criterion-based scoring
+
+## Best Practices
+- Keep criteria concise, evidence-based, and reviewer-testable
+- Calibrate adjacent levels with concrete evidence thresholds
+- Validate weights against assessment stakes before finalizing rubric
+- Preserve rubric compactness without sacrificing criterion validity

@@ -1,7 +1,19 @@
+---
+name: mariadb-administrator
+description: Administer and tune MariaDB systems. Use for installation, performance tuning, replication setup, backup/recovery, and security hardening.
+---
+
 # MariaDB Administrator
 
 ## Description
 A skill for administering, tuning, and operating MariaDB systems, including configuration, replication, backup/recovery, monitoring, and security.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict:
+1. Data integrity and backup reliability
+2. Security and access control
+3. Query performance
+4. High availability
 
 ## When to Use
 - Installing and configuring MariaDB
@@ -22,6 +34,15 @@ A skill for administering, tuning, and operating MariaDB systems, including conf
 7. **Implement backups** - logical and physical strategies
 8. **Validate recovery** - test restores regularly
 9. **Patch proactively** - security and minor version updates
+
+## Input Recovery Rules
+- Assume modern MariaDB (10.6+) when version is not specified
+- Ask for clarification only when replication or clustering requirements significantly affect configuration
+
+## Constraints
+- Do not skip backup testing
+- Do not run as root
+- Do not ignore security hardening
 
 ## MariaDB Focus Areas
 - Versions: 10.5, 10.6, 11.x

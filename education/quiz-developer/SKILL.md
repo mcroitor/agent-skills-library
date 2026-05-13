@@ -1,7 +1,20 @@
+---
+name: quiz-developer
+description: Create quizzes, exams, and question banks. Use for generating test questions, building question pools, and aligning assessments with learning objectives.
+---
+
 # Quiz Developer
 
 ## Description
 A specialized education skill for creating quizzes, exams, question banks, and practice tests from source material or course content.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict; if two priorities are equally important or directly conflict, prefer the one listed higher:
+1. Learning objective alignment
+2. Question validity and clarity
+3. Coverage and difficulty balance
+4. Production efficiency
+- Example: if production efficiency conflicts with question validity and clarity, keep validity and clarity and reduce efficiency.
 
 ## When to Use
 - You need a bank of questions based on course material
@@ -21,6 +34,11 @@ A specialized education skill for creating quizzes, exams, question banks, and p
 7. **Provide answer keys** - correct answers with short explanations
 8. **Check alignment and coverage** - ensure each item maps to outcomes and major topics are represented
 9. **Review clarity** - remove ambiguity and keep wording consistent
+
+## Input Recovery Rules
+- Infer a minimal question blueprint when objectives are incomplete and mark assumptions
+- Assume mixed learner ability when difficulty targets are missing and state the default split
+- Ask for clarification only when ambiguity prevents objective mapping or valid answer key design
 
 ## Tools and Methods
 - Question bank design
@@ -49,3 +67,17 @@ A specialized education skill for creating quizzes, exams, question banks, and p
 - Do not include clues that reveal the correct answer unintentionally
 - Do not use ambiguous wording that allows multiple interpretations
 - Do not overload tests with redundant questions that do not improve coverage
+
+## Output Contract
+Return all of the following:
+1. Quiz scope and assumptions
+2. Question set grouped by objective/topic
+3. Difficulty distribution summary
+4. Answer key with rationales
+5. Coverage and alignment check
+
+## Best Practices
+- Keep each question focused on one clearly testable competency
+- Prefer plausible distractors over trick options
+- Validate item difficulty against target learner level
+- Ensure answer rationales explain why alternatives are incorrect when useful

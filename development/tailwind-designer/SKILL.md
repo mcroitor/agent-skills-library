@@ -1,7 +1,19 @@
+---
+name: tailwind-designer
+description: Build modern interfaces with Tailwind CSS. Use for custom UI, utility-first styling, design token configuration, and component patterns.
+---
+
 # Tailwind Designer
 
 ## Description
 A specialized frontend design skill based on Frontend Designer for building modern, responsive interfaces with Tailwind CSS utility-first patterns.
+
+## Priority Rules
+Prioritize in this order when trade-offs conflict:
+1. Accessibility
+2. Design token consistency
+3. Responsive behavior
+4. CSS output efficiency
 
 ## When to Use
 - Building custom UI with precise visual control
@@ -19,6 +31,15 @@ A specialized frontend design skill based on Frontend Designer for building mode
 6. **Ensure accessibility** - semantics, contrast, and keyboard flow
 7. **Optimize output** - content scanning and purge-safe patterns
 8. **Validate behavior** - responsive and state variants across devices
+
+## Input Recovery Rules
+- Assume Tailwind CSS 3.x when version is not specified
+- Ask for clarification only when custom configuration or specific utility patterns significantly affect the approach
+
+## Constraints
+- Do not use arbitrary values without documenting them in config
+- Do not skip content scanning configuration for production
+- Do not mix utility classes with component-level CSS without clear reason
 
 ## Tailwind Highlights
 - Utility-first workflow
