@@ -190,6 +190,33 @@
 - API-референсы, runbook и migration guides
 - Единые стандарты качества документации
 
+#### 4.2. Scientific Writing Editor (`documents/scientific-writing-editor/SKILL.md`)
+
+Базовый навык для улучшения научного текста, прозрачности аргументации и связи утверждений с доказательствами.
+
+- Научный тон и калибровка уверенности
+- Логика claim-evidence и ясность аргументов
+- Связность текста, переходы и единообразие терминов
+- Консистентность цитирования и аккуратность библиографии
+
+#### 4.3. Academic Manuscript Editor (`documents/academic-manuscript-editor/SKILL.md`) ⭐ производный от Scientific Writing Editor
+
+Редактирование рукописей под публикацию с фокусом на IMRAD, требования площадки и работу с ревью.
+
+- Архитектура рукописи и доработка разделов
+- Соответствие требованиям журнала/конференции
+- Улучшение title/abstract/discussion
+- Подготовка submission и response-to-reviewers
+
+#### 4.4. Research Writing Assistant (`documents/research-writing-assistant/SKILL.md`) ⭐ производный от Scientific Writing Editor
+
+Помощь в черновом написании научного текста из заметок, источников и результатов исследования.
+
+- Преобразование заметок в структурированный черновик
+- Синтез литературы и related work
+- Цитирование в процессе написания и последующая вычитка
+- Формулировка вклада, ограничений и направлений future work
+
 ### 5. Education
 
 #### 5.1. Learning Path Designer (`education/learning-path-designer/SKILL.md`)
@@ -253,11 +280,11 @@
 
 #### 6.1. Специалист по тестовым сценариям (`testing/test-scenario-writer/SKILL.md`)
 
-Разработка планов тестирования и test cases.
+Проектирование BDD-сценариев в формате Gherkin/Cucumber для приемки и покрытия поведения.
 
-- Test Case дизайн
+- Проектирование сценариев Given/When/Then
 - Boundary Value Analysis
-- Coverage планирование
+- Планирование поведенческого покрытия
 - QA методологии
 
 #### 6.2. Специалист по написанию тестов (`testing/test-writer/SKILL.md`)
@@ -320,6 +347,12 @@
 │   └── web-developer/
 │       └── SKILL.md
 ├── documents/
+│   ├── academic-manuscript-editor/
+│   │   └── SKILL.md
+│   ├── research-writing-assistant/
+│   │   └── SKILL.md
+│   ├── scientific-writing-editor/
+│   │   └── SKILL.md
 │   └── technical-documentation-specialist/
 │       └── SKILL.md
 ├── education/
@@ -613,7 +646,7 @@ class TestGeneratorWithSkills {
 Напиши тестовые сценарии для функции: $featureName
 
 Требования:
-1. Используй формат Test Case из навыка Test Scenario Writer
+1. Используй BDD Gherkin формат (Feature/Scenario/Given-When-Then) из навыка Test Scenario Writer
 2. Включи happy path и edge cases
 3. Напиши минимум 5 тестовых сценариев
 PROMPT;
@@ -714,6 +747,9 @@ Brainstorming (основной)
 │   └─→ AI Prompt Engineer ⭐
 │
 ├─→ Специалист по технической документации (Technical Documentation Specialist, основной)
+├─→ Scientific Writing Editor (основной)
+│   ├─→ Academic Manuscript Editor ⭐
+│   └─→ Research Writing Assistant ⭐
 ├─→ Education (основной)
 │   ├─→ Learning Path Designer (основной)
 │   │   └─→ Curriculum Developer ⭐
@@ -787,6 +823,24 @@ Brainstorming (основной)
 
 ```text
 Подготовь API integration guide с prerequisites, примерами и troubleshooting
+```
+
+**Для Scientific Writing Editor:**
+
+```text
+Отредактируй исследовательский отчет: выровняй научный тон, усили логику claim-evidence и приведи ссылки к стилю IEEE
+```
+
+**Для Academic Manuscript Editor:**
+
+```text
+Приведи черновик статьи к публикационному IMRAD-формату и подготовь скелет ответа рецензентам
+```
+
+**Для Research Writing Assistant:**
+
+```text
+Преобразуй заметки экспериментов в связный черновик related work и discussion с evidence-qualified формулировками
 ```
 
 **Для специалиста по искусственному интеллекту:**
