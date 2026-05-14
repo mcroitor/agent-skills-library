@@ -190,6 +190,33 @@ Technical writing for product, API, and operational documentation.
 - API references, runbooks, and migration guides
 - Documentation quality and consistency standards
 
+#### 4.2. Scientific Writing Editor (`documents/scientific-writing-editor/SKILL.md`)
+
+Base skill for improving scientific writing quality, evidence traceability, and argument clarity.
+
+- Scientific tone and uncertainty calibration
+- Claim-evidence alignment and reasoning clarity
+- Coherence, transitions, and terminology consistency
+- Citation consistency and reference hygiene
+
+#### 4.3. Academic Manuscript Editor (`documents/academic-manuscript-editor/SKILL.md`) ⭐ Derived from Scientific Writing Editor
+
+Manuscript-focused editing for submission-ready structure and reviewer-oriented revision.
+
+- IMRAD architecture and section-level refinement
+- Venue guideline compliance and reporting completeness
+- Abstract, title, and discussion optimization
+- Submission and response-to-reviewers readiness
+
+#### 4.4. Research Writing Assistant (`documents/research-writing-assistant/SKILL.md`) ⭐ Derived from Scientific Writing Editor
+
+Drafting support for turning research notes and sources into structured scientific prose.
+
+- Notes-to-draft transformation
+- Literature synthesis and related-work writing
+- Citation-aware drafting and revision
+- Contribution, limitation, and future-work statements
+
 ### 5. Education
 
 #### 5.1. Learning Path Designer (`education/learning-path-designer/SKILL.md`)
@@ -253,11 +280,11 @@ Localization of courses and learning materials for language and regional context
 
 #### 6.1. Test Scenario Writer (`testing/test-scenario-writer/SKILL.md`)
 
-Test planning and test case development.
+BDD scenario design in Gherkin/Cucumber for acceptance and behavior coverage.
 
-- Test Case design
+- Gherkin Given/When/Then scenario design
 - Boundary Value Analysis
-- Coverage planning
+- Behavior coverage planning
 - QA methodologies
 
 #### 6.2. Test Writer (`testing/test-writer/SKILL.md`)
@@ -321,6 +348,12 @@ Test automation and unit, integration, and e2e test development.
 │   └── web-developer/
 │       └── SKILL.md
 ├── documents/
+│   ├── academic-manuscript-editor/
+│   │   └── SKILL.md
+│   ├── research-writing-assistant/
+│   │   └── SKILL.md
+│   ├── scientific-writing-editor/
+│   │   └── SKILL.md
 │   └── technical-documentation-specialist/
 │       └── SKILL.md
 ├── education/
@@ -614,7 +647,7 @@ class TestGeneratorWithSkills {
 Write test scenarios for function: $featureName
 
 Requirements:
-1. Use Test Case format from Test Scenario Writer skill
+1. Use BDD Gherkin format (Feature/Scenario/Given-When-Then) from Test Scenario Writer skill
 2. Include happy path and edge cases
 3. Write at least 5 test scenarios
 PROMPT;
@@ -715,6 +748,9 @@ Brainstorming (base)
 │   └─→ AI Prompt Engineer ⭐
 │
 ├─→ Technical Documentation Specialist (base)
+├─→ Scientific Writing Editor (base)
+│   ├─→ Academic Manuscript Editor ⭐
+│   └─→ Research Writing Assistant ⭐
 ├─→ Education (base)
 │   ├─→ Learning Path Designer (base)
 │   │   └─→ Curriculum Developer ⭐
@@ -789,6 +825,24 @@ Create GitHub Actions workflow for automatic Docker container deployment to prod
 
 ```text
 Create an API integration guide with prerequisites, examples, and troubleshooting
+```
+
+**For Scientific Writing Editor:**
+
+```text
+Edit this research report for scientific tone, claim-evidence clarity, and consistent IEEE citations
+```
+
+**For Academic Manuscript Editor:**
+
+```text
+Revise this paper draft into submission-ready IMRAD structure and prepare a reviewer response outline
+```
+
+**For Research Writing Assistant:**
+
+```text
+Convert these experiment notes into a coherent related-work and discussion draft with evidence-qualified language
 ```
 
 **For Artificial Intelligence Specialist:**
