@@ -340,7 +340,8 @@ Test automation and unit, integration, and e2e test development.
 │   │   └── SKILL.md
 │   ├── skeleton-designer/
 │   │   ├── assets/
-│   │   │   └── skeleton-designer-base.css
+│   │   │   ├── normalize.css
+│   │   │   └── skeleton.css
 │   │   └── SKILL.md
 │   ├── tailwind-designer/
 │   │   └── SKILL.md

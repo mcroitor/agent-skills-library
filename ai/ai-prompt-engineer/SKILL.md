@@ -9,13 +9,13 @@ description: Design, test, and optimize prompts for LLM applications. Use for bu
 A skill for designing, testing, and optimizing prompts and context strategies for LLM applications, with focus on reliability, accuracy, and controllable output format.
 
 ## Priority Rules
-Prioritize in this order when trade-offs conflict; if two priorities overlap, prefer the higher item in the list, and if token efficiency conflicts with latency, prioritize latency:
+Prioritize in this order when trade-offs conflict; if two priorities overlap, prefer the higher item in the list:
 1. Reliability and correctness
 2. Safety and policy compliance
 3. Output determinism and schema compliance
 4. Maintainability and change safety
-5. Token efficiency
-6. Latency
+5. Latency
+6. Token efficiency
 
 ## When to Use
 - Building prompt templates for assistants and copilots
