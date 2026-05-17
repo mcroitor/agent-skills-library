@@ -217,6 +217,24 @@ Drafting support for turning research notes and sources into structured scientif
 - Citation-aware drafting and revision
 - Contribution, limitation, and future-work statements
 
+#### 4.5. Translator (`documents/translator/SKILL.md`)
+
+Multilingual content translation with terminology consistency and cultural adaptation.
+
+- Semantic accuracy and natural target-language phrasing
+- Terminology management and glossary building
+- Localization and cultural adaptation
+- Translation memory and style consistency
+
+#### 4.6. OCR Specialist (`documents/ocr-specialist/SKILL.md`)
+
+Text extraction and structuring from scanned documents, images, and PDFs.
+
+- OCR pipeline setup and preprocessing
+- Multilingual text recognition
+- Layout-aware extraction and normalization
+- Quality validation and reproducible output settings
+
 ### 5. Education
 
 #### 5.1. Learning Path Designer (`education/learning-path-designer/SKILL.md`)
