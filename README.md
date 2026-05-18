@@ -368,11 +368,15 @@ Test automation and unit, integration, and e2e test development.
 ├── documents/
 │   ├── academic-manuscript-editor/
 │   │   └── SKILL.md
+│   ├── ocr-specialist/
+│   │   └── SKILL.md
 │   ├── research-writing-assistant/
 │   │   └── SKILL.md
 │   ├── scientific-writing-editor/
 │   │   └── SKILL.md
-│   └── technical-documentation-specialist/
+│   ├── technical-documentation-specialist/
+│   │   └── SKILL.md
+│   └── translator/
 │       └── SKILL.md
 ├── education/
 │   ├── assessment-writer/
