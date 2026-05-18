@@ -217,6 +217,24 @@
 - Цитирование в процессе написания и последующая вычитка
 - Формулировка вклада, ограничений и направлений future work
 
+#### 4.5. Translator (`documents/translator/SKILL.md`)
+
+Многоязычный перевод контента с сохранением смысла, стиля и терминологии.
+
+- Семантическая точность и естественность целевого языка
+- Управление терминологией и создание глоссариев
+- Локализация и культурная адаптация
+- Память переводов и консистентность стиля
+
+#### 4.6. OCR Specialist (`documents/ocr-specialist/SKILL.md`)
+
+Извлечение и структурирование текста из сканов, изображений и PDF-документов.
+
+- Настройка OCR-пайплайна и препроцессинга
+- Мультиязычное распознавание текста
+- Layout-aware извлечение и нормализация
+- Валидация качества и воспроизводимые настройки вывода
+
 ### 5. Education
 
 #### 5.1. Learning Path Designer (`education/learning-path-designer/SKILL.md`)
@@ -340,7 +358,8 @@
 │   │   └── SKILL.md
 │   ├── skeleton-designer/
 │   │   ├── assets/
-│   │   │   └── skeleton-designer-base.css
+│   │   │   ├── normalize.css
+│   │   │   └── skeleton.css
 │   │   └── SKILL.md
 │   ├── tailwind-designer/
 │   │   └── SKILL.md
@@ -349,11 +368,15 @@
 ├── documents/
 │   ├── academic-manuscript-editor/
 │   │   └── SKILL.md
+│   ├── ocr-specialist/
+│   │   └── SKILL.md
 │   ├── research-writing-assistant/
 │   │   └── SKILL.md
 │   ├── scientific-writing-editor/
 │   │   └── SKILL.md
-│   └── technical-documentation-specialist/
+│   ├── technical-documentation-specialist/
+│   │   └── SKILL.md
+│   └── translator/
 │       └── SKILL.md
 ├── education/
 │   ├── assessment-writer/
