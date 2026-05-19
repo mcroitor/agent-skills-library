@@ -180,6 +180,24 @@
 - Мониторинг и логирование
 - Security и оптимизация инфраструктуры
 
+#### 3.13. Windows C++ Developer (`development/windows-cpp-developer/SKILL.md`) ⭐ производный от C++ Developer
+
+Продвинутая разработка на C++ под Windows с OOP-first архитектурой и нативной интеграцией с платформой.
+
+- Предпочтение объектно-ориентированной архитектуры
+- Высокий уровень программирования под Windows OS
+- Следование Google C++ Style Guide
+- Unit тестирование на Catch2
+
+#### 3.14. Linux C++ Developer (`development/linux-cpp-developer/SKILL.md`) ⭐ производный от C++ Developer
+
+Продвинутая разработка на C++ под Linux с OOP-first архитектурой и нативной интеграцией с платформой.
+
+- Предпочтение объектно-ориентированной архитектуры
+- Высокий уровень программирования под Linux OS
+- Следование Google C++ Style Guide
+- Unit тестирование на Catch2
+
 ### 4. Documents
 
 #### 4.1. Специалист по технической документации (`documents/technical-documentation-specialist/SKILL.md`)
@@ -350,6 +368,8 @@
 │   │   └── SKILL.md
 │   ├── frontend-designer/
 │   │   └── SKILL.md
+│   ├── linux-cpp-developer/
+│   │   └── SKILL.md
 │   ├── mariadb-administrator/
 │   │   └── SKILL.md
 │   ├── moodle-developer/
@@ -363,7 +383,9 @@
 │   │   └── SKILL.md
 │   ├── tailwind-designer/
 │   │   └── SKILL.md
-│   └── web-developer/
+│   ├── web-developer/
+│   │   └── SKILL.md
+│   └── windows-cpp-developer/
 │       └── SKILL.md
 ├── documents/
 │   ├── academic-manuscript-editor/
