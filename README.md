@@ -180,6 +180,24 @@ Containerization, orchestration, and deployment automation.
 - Monitoring and logging
 - Security and infrastructure optimization
 
+#### 3.13. Windows C++ Developer (`development/windows-cpp-developer/SKILL.md`) ⭐ Derived from C++ Developer
+
+Advanced C++ development for Windows with OOP-first architecture and platform-native engineering.
+
+- Object-oriented architecture preference
+- High-level programming for Windows OS
+- Google C++ Style Guide compliance
+- Unit testing with Catch2
+
+#### 3.14. Linux C++ Developer (`development/linux-cpp-developer/SKILL.md`) ⭐ Derived from C++ Developer
+
+Advanced C++ development for Linux with OOP-first architecture and platform-native engineering.
+
+- Object-oriented architecture preference
+- High-level programming for Linux OS
+- Google C++ Style Guide compliance
+- Unit testing with Catch2
+
 ### 4. Documents
 
 #### 4.1. Technical Documentation Specialist (`documents/technical-documentation-specialist/SKILL.md`)
@@ -350,6 +368,8 @@ Test automation and unit, integration, and e2e test development.
 │   │   └── SKILL.md
 │   ├── frontend-designer/
 │   │   └── SKILL.md
+│   ├── linux-cpp-developer/
+│   │   └── SKILL.md
 │   ├── mariadb-administrator/
 │   │   └── SKILL.md
 │   ├── moodle-developer/
@@ -364,6 +384,8 @@ Test automation and unit, integration, and e2e test development.
 │   ├── tailwind-designer/
 │   │   └── SKILL.md
 │   └── web-developer/
+│   │   └── SKILL.md
+│   └── windows-cpp-developer/
 │       └── SKILL.md
 ├── documents/
 │   ├── academic-manuscript-editor/
