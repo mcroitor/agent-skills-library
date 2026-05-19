@@ -383,7 +383,7 @@ Test automation and unit, integration, and e2e test development.
 │   │   └── SKILL.md
 │   ├── tailwind-designer/
 │   │   └── SKILL.md
-│   └── web-developer/
+│   ├── web-developer/
 │   │   └── SKILL.md
 │   └── windows-cpp-developer/
 │       └── SKILL.md
