@@ -41,6 +41,8 @@ This reference defines practical mapping rules for exporting bibliography data t
 | booktitle | BookTitle |
 | chapter | ChapterNumber |
 | issue | Issue |
+| number | Issue |
+| isbn | StandardNumber |
 | school | Department |
 | institution | Institution |
 | doi | DOI |
@@ -61,7 +63,8 @@ This reference defines practical mapping rules for exporting bibliography data t
   - with comma: map to City.
   - without comma: map to City, StateProvince, CountryRegion.
 - For patent entries, number maps to PatentNumber.
-- For non-patent entries, number maps to Number.
+- For journal articles, number maps to Issue.
+- For other non-patent entries, number maps to Number.
 - Corporate author forms may map to Corporate.
 - For patent entries, author may map to Inventor.
 
