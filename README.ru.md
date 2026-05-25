@@ -215,7 +215,9 @@
 - Научный тон и калибровка уверенности
 - Логика claim-evidence и ясность аргументов
 - Связность текста, переходы и единообразие терминов
-- Консистентность цитирования и аккуратность библиографии
+- Нормализация цитирования по ISO 690:2022 и аккуратность библиографии
+- Экспорт библиографии в формате BibTeX
+- Экспорт Microsoft Word bibliography Sources XML (references.xml)
 
 #### 4.3. Academic Manuscript Editor (`documents/academic-manuscript-editor/SKILL.md`) ⭐ производный от Scientific Writing Editor
 
@@ -496,19 +498,32 @@ response = ollama.generate(
 print(response['response'])
 ```
 
-**Использование нескольких скиллов**:
+**Использование маршрутизации скиллов (рекомендуется)**:
 
 ```python
 import ollama
 from pathlib import Path
 
-# Загрузите несколько скиллов
-skills_context = ""
-skills_dir = Path('skills-library')
+# Минимальная карта маршрутов: подключайте только достаточный набор скиллов.
+ROUTES = {
+    "php_api": [
+        "skills-library/development/php-developer/SKILL.md",
+        "skills-library/development/web-developer/SKILL.md",
+    ],
+    "devops": [
+        "skills-library/development/devops-engineer/SKILL.md",
+    ],
+}
 
-for skill_file in skills_dir.rglob('SKILL.md'):
-    with open(skill_file, 'r') as f:
-        skills_context += f.read() + "\n\n"
+def load_context(skill_paths):
+    chunks = []
+    for path in skill_paths:
+        with open(Path(path), 'r', encoding='utf-8') as f:
+            chunks.append(f.read())
+    return "\n\n".join(chunks)
+
+task_type = "php_api"
+skills_context = load_context(ROUTES[task_type])
 
 # Используйте для генерации кода
 prompt = f"""{skills_context}
@@ -605,7 +620,7 @@ curl_close($ch);
 ?>
 ```
 
-**Использование нескольких скиллов в PHP**:
+**Использование маршрутизации скиллов в PHP**:
 
 ```php
 <?php
@@ -614,19 +629,31 @@ class OllamaSkillAssistant {
     private $serverUrl = 'http://localhost:8000';
     private $model = 'codellama';
     private $skillsContext = '';
-    
-    public function __construct($skillsDir = 'skills-library') {
-        $this->loadSkills($skillsDir);
-    }
-    
-    private function loadSkills($skillsDir) {
-        $files = glob("$skillsDir/*/*/SKILL.md");
-        foreach ($files as $file) {
+    private $routes = [
+        'php_api' => [
+            'skills-library/development/php-developer/SKILL.md',
+            'skills-library/development/web-developer/SKILL.md'
+        ],
+        'moodle' => [
+            'skills-library/development/moodle-developer/SKILL.md',
+            'skills-library/development/php-developer/SKILL.md',
+            'skills-library/development/mariadb-administrator/SKILL.md'
+        ],
+        'devops' => [
+            'skills-library/development/devops-engineer/SKILL.md'
+        ]
+    ];
+
+    private function loadRoute(string $routeKey): void {
+        $this->skillsContext = '';
+        foreach ($this->routes[$routeKey] as $file) {
             $this->skillsContext .= file_get_contents($file) . "\n\n";
         }
     }
     
-    public function generate($prompt, $maxTokens = 1000) {
+    public function generate($prompt, $routeKey = 'php_api', $maxTokens = 1000) {
+        $this->loadRoute($routeKey);
+
         $systemRules = "You are a senior software engineer. Use the provided skill context strictly. Return practical, production-oriented output.";
         $fullPrompt = "<system_rules>\n" . $systemRules . "\n</system_rules>\n"
             . "<skill_context>\n" . $this->skillsContext . "\n</skill_context>\n"
@@ -651,13 +678,7 @@ class OllamaSkillAssistant {
     }
     
     public function generateMoodle($prompt) {
-        // Загрузите только нужные скиллы
-        $moodleSkills = file_get_contents('skills-library/development/moodle-developer/SKILL.md');
-        $phpSkills = file_get_contents('skills-library/development/php-developer/SKILL.md');
-        
-        $fullPrompt = $moodleSkills . "\n" . $phpSkills . "\n\n" . $prompt;
-        
-        return $this->generate($fullPrompt);
+        return $this->generate($prompt, 'moodle');
     }
 }
 
@@ -665,7 +686,7 @@ class OllamaSkillAssistant {
 $assistant = new OllamaSkillAssistant();
 
 // Генерируйте код DevOps
-$devopsCode = $assistant->generate('Создай Docker Compose для приложения с nginx, php-fpm и postgresql');
+$devopsCode = $assistant->generate('Создай Docker Compose для приложения с nginx, php-fpm и postgresql', 'devops');
 echo "=== DevOps Solution ===\n$devopsCode\n\n";
 
 // Генерируйте Moodle плагин
@@ -770,55 +791,60 @@ make
 Некоторые скиллы строятся на базе других и требуют понимания базовых скиллов:
 
 ```text
-Brainstorming (основной)
-├─→ Problem Decomposer (основной)
-├─→ Research Synthesizer (основной)
-├─→ Communication Adapter (основной)
-│
-├─→ Архитектор ПО (Software Architect, основной)
+Общие навыки
+├─→ Brainstorming
+├─→ Problem Decomposer
+├─→ Research Synthesizer
+└─→ Communication Adapter
+
+AI навыки
+└─→ Artificial Intelligence Specialist
+    ├─→ AI Product Manager ⭐ (производный от)
+    └─→ AI Prompt Engineer ⭐ (производный от)
+
+Навыки разработки
+├─→ Architect
 │   └─→ Web Developer
-│       ├─→ DevOps Engineer ⭐
-│       └─→ Moodle Developer ⭐⭐
-│
-├─→ PHP Developer (основной)
-│   └─→ Moodle Developer ⭐⭐ (требует также MariaDB Administrator)
-│
-├─→ Database Developer (основной)
-│   └─→ MariaDB Administrator ⭐
-│       └─→ Moodle Developer ⭐⭐
-│
-├─→ Специалист по искусственному интеллекту (Artificial Intelligence Specialist, основной)
-│   ├─→ AI Product Manager ⭐
-│   └─→ AI Prompt Engineer ⭐
-│
-├─→ Специалист по технической документации (Technical Documentation Specialist, основной)
-├─→ Scientific Writing Editor (основной)
-│   ├─→ Academic Manuscript Editor ⭐
-│   └─→ Research Writing Assistant ⭐
-├─→ Education (основной)
-│   ├─→ Learning Path Designer (основной)
-│   │   └─→ Curriculum Developer ⭐
-│   │       ├─→ Assessment Writer ⭐
-│   │       │   └─→ Rubric Designer ⭐
-│   │       └─→ Quiz Developer ⭐
-│   └─→ Educational Content Reviewer (основной)
-│       └─→ Course Localization Specialist ⭐
-├─→ C++ Developer (основной)
-├─→ Frontend Designer (основной)
-│   ├─→ Bootstrap Designer ⭐
-│   ├─→ Tailwind Designer ⭐
-│   └─→ Skeleton Designer ⭐
-├─→ Web Developer (основной)
-│   ├─→ DevOps Engineer ⭐
-│   └─→ Moodle Developer ⭐⭐
-├─→ Test Scenario Writer (основной)
-└─→ Test Writer (основной)
+│       └─→ DevOps Engineer ⭐ (на базе)
+├─→ Database Developer
+│   └─→ MariaDB Administrator ⭐ (на базе)
+│       └─→ Moodle Developer ⭐⭐ (на базе PHP Developer + MariaDB Administrator)
+├─→ PHP Developer
+│   └─→ Moodle Developer ⭐⭐ (на базе PHP Developer + MariaDB Administrator)
+├─→ C++ Developer
+│   ├─→ Windows C++ Developer ⭐ (производный от)
+│   └─→ Linux C++ Developer ⭐ (производный от)
+└─→ Frontend Designer
+    ├─→ Bootstrap Designer ⭐ (производный от)
+    ├─→ Tailwind Designer ⭐ (производный от)
+    └─→ Skeleton Designer ⭐ (производный от)
+
+Навыки работы с документами
+├─→ Technical Documentation Specialist
+└─→ Scientific Writing Editor
+    ├─→ Academic Manuscript Editor ⭐ (производный от)
+    └─→ Research Writing Assistant ⭐ (производный от)
+
+Образовательные навыки
+├─→ Learning Path Designer
+│   └─→ Curriculum Developer ⭐ (производный от)
+│       ├─→ Assessment Writer ⭐ (производный от)
+│       │   └─→ Rubric Designer ⭐ (производный от)
+│       └─→ Quiz Developer ⭐ (производный от)
+└─→ Educational Content Reviewer
+    └─→ Course Localization Specialist ⭐ (производный от)
+
+Навыки тестирования
+├─→ Test Scenario Writer
+└─→ Test Writer
 ```
 
 **Легенда:**
 
 - ⭐ — специализированный скилл (расширение базового)
 - ⭐⭐ — комплексный скилл (комбинирование нескольких)
+- Производный от — наследует поведенческие контракты (priority rules, constraints, workflow) и специализирует их
+- На базе — переиспользует концепции, инструменты или контекст другого скилла без полного наследования поведения
 
 ### Примеры использования
 

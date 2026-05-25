@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<b:Sources xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" SelectedStyle="" StyleName="ISO 690:2022">
+  <b:Source>
+    <b:Tag>smith2024graph</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Graph Methods for Document Analysis</b:Title>
+    <b:Year>2024</b:Year>
+    <b:JournalName>Journal of Applied Informatics</b:JournalName>
+    <b:Volume>12</b:Volume>
+    <b:Issue>3</b:Issue>
+    <b:Pages>44-61</b:Pages>
+    <b:DOI>10.1234/jai.2024.44</b:DOI>
+  </b:Source>
+  <b:Source>
+    <b:Tag>brown2022methods</b:Tag>
+    <b:SourceType>Book</b:SourceType>
+    <b:Title>Methods in Scientific Writing</b:Title>
+    <b:Year>2022</b:Year>
+    <b:Publisher>North Press</b:Publisher>
+    <b:City>London</b:City>
+    <b:StandardNumber>978-1-23456-789-0</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>iso690page</b:Tag>
+    <b:SourceType>InternetSite</b:SourceType>
+    <b:Title>ISO 690:2022 standard overview</b:Title>
+    <b:Year>2025</b:Year>
+    <b:URL>https://example.org/iso690</b:URL>
+    <b:YearAccessed>2026</b:YearAccessed>
+    <b:MonthAccessed>05</b:MonthAccessed>
+    <b:DayAccessed>25</b:DayAccessed>
+  </b:Source>
+</b:Sources>

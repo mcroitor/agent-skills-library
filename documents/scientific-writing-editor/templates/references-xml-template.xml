@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<b:Sources xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" SelectedStyle="" StyleName="ISO 690:2022">
+  <b:Source>
+    <b:Tag>sample_key</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Guid>{00000000-0000-0000-0000-000000000000}</b:Guid>
+    <b:Title>Sample Title</b:Title>
+    <b:Year>2025</b:Year>
+    <b:JournalName>Sample Journal</b:JournalName>
+    <b:Volume>1</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:Pages>1-10</b:Pages>
+    <b:DOI>10.0000/sample</b:DOI>
+    <b:URL>https://example.org</b:URL>
+    <b:Authors>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Author</b:Last>
+            <b:First>A.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Authors>
+  </b:Source>
+</b:Sources>
