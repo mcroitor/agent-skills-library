@@ -385,7 +385,7 @@
 │   │   └── SKILL.md
 │   ├── tailwind-designer/
 │   │   └── SKILL.md
-│   └── web-developer/
+│   ├── web-developer/
 │   │   └── SKILL.md
 │   └── windows-cpp-developer/
 │       └── SKILL.md
