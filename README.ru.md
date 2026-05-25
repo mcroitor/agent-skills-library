@@ -652,6 +652,12 @@ class OllamaSkillAssistant {
     }
     
     public function generate($prompt, $routeKey = 'php_api', $maxTokens = 1000) {
+        // Backward-compatible: allow passing maxTokens as the 2nd positional argument.
+        if (is_int($routeKey)) {
+            $maxTokens = $routeKey;
+            $routeKey = 'php_api';
+        }
+
         $this->loadRoute($routeKey);
 
         $systemRules = "You are a senior software engineer. Use the provided skill context strictly. Return practical, production-oriented output.";
