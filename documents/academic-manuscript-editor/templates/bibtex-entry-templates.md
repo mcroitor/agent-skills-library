@@ -62,12 +62,12 @@ These templates define output structure for normalized bibliography export.
 ```
 
 ## Online
-```bibtex
-@online{key,
-  author  = {Organization Name},
-  title   = {Resource Title},
-  year    = {2025},
-  url     = {https://example.org/resource},
-  urldate = {2026-05-25}
-}
-```
+
+    @misc{key,
+      author       = {Organization Name},
+      title        = {Resource Title},
+      year         = {2025},
+      howpublished = {\url{https://example.org/resource}},
+      note         = {Accessed: 2026-05-25}
+    }
+
