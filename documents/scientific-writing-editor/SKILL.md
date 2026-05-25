@@ -22,7 +22,7 @@ Prioritize in this order when requirements conflict:
 - Improving claim-evidence reasoning in draft text
 - Aligning tone, certainty, and methodological language
 - Standardizing citation style and reference hygiene
-- Generating bibliography exports in BibTeX format
+- Generating bibliography exports in BibTeX format (using BibTeX-compatible entry types)
 - Generating Microsoft Word bibliography Sources XML (references.xml) output for import
 
 ## Instructions
