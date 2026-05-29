@@ -1,6 +1,6 @@
 # Markdown Best Practices
 
-These guidelines ensure maximum compatibility across different Markdown processors and renderers, based on the standards from [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
+These guidelines ensure maximum compatibility across different Markdown processors and renderers, based on recommendations from the [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
 
 ## General Formatting
 
