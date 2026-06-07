@@ -379,9 +379,4 @@ Promising directions for future research include empirical validation of the pro
 
 ## Author information
 
-- Author: **Mihail CROITOR**
-- Institution: **Moldova State University, Chisinau, Republic of Moldova**
-- Position: **university lecturer**
-- E-mail: **mihail.croitor@usm.md**
-- Contact phone: **(+373) 69362630**
-- ORCID: **0009-0004-5046-0811**
+Author contact details are intentionally omitted from this repository copy. See the original publication for author metadata.
