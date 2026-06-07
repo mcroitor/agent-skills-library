@@ -59,8 +59,7 @@ Example for the combined rubric:
 
 `P_i = max(0, L_i - k_i * D_i)`
 
-`G = ( sum(P_i * q_i) / sum(q_i) ) - k * D`
-
+`G = max(0, ( sum(P_i * q_i) / sum(q_i) ) - k * D)`
 If the rubric is not combined, replace the example above with the exact formula used.
 
 ### 4.2 Parameter legend
