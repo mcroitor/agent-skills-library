@@ -4,12 +4,11 @@ This example demonstrates the default behavior of the Rubric Designer skill: a s
 
 ---
 
-## Executive Summary
+## Note (not part of the default output)
 
 > **The main output of this skill is the Criteria and Levels Table in Section 3.**
 >
 > This example shows the default (rubric-only) output: the Criteria and Levels Table alone, with all assumptions, weights, and penalties embedded in the table and notes. For full documentation with alignment, scoring model, calibration, and checklists, see [example-rubric-academic-writing-definition.md](example-rubric-academic-writing-definition.md).
-
 ---
 
 ## Example Request (input to the skill)
