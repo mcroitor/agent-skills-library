@@ -23,13 +23,13 @@ skill-name/
 
 ### Directory Purpose Reference
 
-| Folder | Purpose | Example Content |
-| ------ | ------- | --------------- |
-| `scripts/` | Executable tooling | `analyze.py`, `validate.sh` |
-| `references/` | Informational material | `policy.md`, `api-docs.md` |
-| `templates/` | Reusable templates | `prompt-template.md`, `output-schema.json` |
-| `examples/` | Demonstrations | `example-input.md`, `example-output.md` |
-| `assets/` | Static support files | `styles.css`, `images/` |
+| Folder        | Purpose                | Example Content                            |
+| ------------- | ---------------------- | ------------------------------------------ |
+| `scripts/`    | Executable tooling     | `analyze.py`, `validate.sh`                |
+| `references/` | Informational material | `policy.md`, `api-docs.md`                 |
+| `templates/`  | Reusable templates     | `prompt-template.md`, `output-schema.json` |
+| `examples/`   | Demonstrations         | `example-input.md`, `example-output.md`    |
+| `assets/`     | Static support files   | `styles.css`, `images/`                    |
 
 **Note**: Start with `references/` and `assets/` as defined in the base standard. Add `templates/`, `examples/` as the ecosystem grows.
 
@@ -325,13 +325,13 @@ To ensure consistency, use these preferred names:
 
 Clear behavioral distinctions between sections help agents understand execution priority:
 
-| Section | Execution Behavior |
-| ------- | ------------------ |
-| **Instructions** | Mandatory execution workflow — must be followed in order |
-| **Constraints** | Hard prohibitions or requirements — must not be violated |
-| **Best Practices** | Preferred approaches — follow unless conflicting with constraints |
-| **Recommendations** | Optional guidance with lowest priority — follow when helpful |
-| **Priority Rules** | Conflict resolution logic — defines how to resolve competing requirements |
+| Section             | Execution Behavior                                                        |
+| ------------------- | ------------------------------------------------------------------------- |
+| **Instructions**    | Mandatory execution workflow — must be followed in order                  |
+| **Constraints**     | Hard prohibitions or requirements — must not be violated                  |
+| **Best Practices**  | Preferred approaches — follow unless conflicting with constraints         |
+| **Recommendations** | Optional guidance with lowest priority — follow when helpful              |
+| **Priority Rules**  | Conflict resolution logic — defines how to resolve competing requirements |
 
 ### Semantic Boundaries
 
