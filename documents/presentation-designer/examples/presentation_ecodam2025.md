@@ -1,6 +1,6 @@
 # Application of Artificial Intelligence for Assessing Open-Ended Responses
 
-## Slide 0. Application of Artificial Intelligence for Assessing Open-Ended Responses
+## Slide 1. Application of Artificial Intelligence for Assessing Open-Ended Responses
 
 ```slide:title
 +----------------------------------------------------------------+
@@ -8,16 +8,14 @@
 |                                                                |
 |                                                                |
 |                                                                |
-|      Application of AI for Assessing Open-Ended Responses      |
-|                                                                |
+|     =Application of AI for Assessing Open-Ended Responses      |
 |                                                                |
 |                                                                |
 |                                                                |
 +----------------------------------------------------------------+
 |                                                                |
-|                                                                |
-|                                                 Mihail Croitor |
-|                                                   ECODAM, 2026 |
+|                                               >>Mihail Croitor |
+|                                                 >>ECODAM, 2026 |
 |                                                                |
 +----------------------------------------------------------------+
 ```
@@ -26,7 +24,7 @@ __Comment:__ My name is Mihail Croitor, and I am a doctoral student at Moldova S
 
 The title of my thesis is "Application of Artificial Intelligence for Assessing Open-Ended Responses".
 
-## Slide 1. Topic and Relevance
+## Slide 2. Topic and Relevance
 
 ```slide:content
 +----------------------------------------------------------------+
@@ -43,9 +41,6 @@ The title of my thesis is "Application of Artificial Intelligence for Assessing 
 |                                                                |
 |                                                                |
 |                                                                |
-|                                                                |
-|                                                                |
-|                                                                |
 +----------------------------------------------------------------+
 ```
 
@@ -58,7 +53,7 @@ __Comment:__ The problem we are addressing involves several key issues:
 
 Additionally, there are important ethical and financial aspects to consider.
 
-## Slide 2. Research Objective
+## Slide 3. Research Objective
 
 ```slide:content
 +----------------------------------------------------------------+
@@ -75,8 +70,6 @@ Additionally, there are important ethical and financial aspects to consider.
 |                                                                |
 |                                                                |
 |                                                                |
-|                                                                |
-|                                                                |
 +----------------------------------------------------------------+
 ```
 
@@ -85,7 +78,7 @@ __Comment:__ This leads to the following goals:
 - to evaluate whether AI can support or replace humans in essay evaluation, focusing on the stability of evaluation and achieving appropriate scoring results compared to human experts.
 - to develop an AI assessment tool that is natively integrated with the Moodle LMS.
 
-## Slide 3. Core Idea of the Solution
+## Slide 4. Core Idea of the Solution
 
 ```slide:content
 +----------------------------------------------------------------+
@@ -102,8 +95,6 @@ __Comment:__ This leads to the following goals:
 | 4. Explainable feedback, logging, transparency.                |
 |                                                                |
 | 5. Native integration into Moodle workflow.                    |
-|                                                                |
-|                                                                |
 +----------------------------------------------------------------+
 ```
 
@@ -116,7 +107,7 @@ The AI agent-evaluator must possess at least two distinct skills:
 - an assessment specialist skill, providing knowledge on how the assessment should be conducted.
 - a subject-domain specialist skill, ensuring deep knowledge of the specific course material.
 
-## Slide 4. Methodology and Validation
+## Slide 5. Methodology and Validation
 
 ```slide:content
 +----------------------------------------------------------------+
@@ -133,7 +124,6 @@ The AI agent-evaluator must possess at least two distinct skills:
 |                                                                |
 | Check 3: feedback quality, bias risks, practical limits.       |
 |                                                                |
-|                                                                |
 +----------------------------------------------------------------+
 ```
 
@@ -144,7 +134,7 @@ This question means the following:
 - if we will evaluate an essay more times, will we obtain the same or apropiate scores?
 - Will the AI score be same or apropiate with the human expert score?
 
-## Slide 5. Scientific Novelty and Practical Value
+## Slide 6. Scientific Novelty and Practical Value
 
 ```slide:content
 +----------------------------------------------------------------+
@@ -161,8 +151,6 @@ This question means the following:
 |                                                                |
 |                                                                |
 |                                                                |
-|                                                                |
-|                                                                |
 +----------------------------------------------------------------+
 ```
 
@@ -174,3 +162,24 @@ In terms of practical value, the tool is designed for formative use—offering p
 
 Ultimately, our result shows that automation, when implemented responsibly, does not replace the educator but rather strengthens the overall evaluation process.
 
+## Slide 7. Closing slide
+
+```slide:section
++----------------------------------------------------------------+
+|                                                                |
+|   +--------------------------------------------------------+   |
+|   |                                                        |   |
+|   |                                                        |   |
+|   |                                                        |   |
+|   |                     =Thank You!                        |   |
+|   |                                                        |   |
+|   |                                                        |   |
+|   |                                                        |   |
+|   +--------------------------------------------------------+   |
+|   |                                         >>Questions?   |   |
+|   +--------------------------------------------------------+   |
+|                                                                |
++----------------------------------------------------------------+
+```
+
+__Comment:__ The end.

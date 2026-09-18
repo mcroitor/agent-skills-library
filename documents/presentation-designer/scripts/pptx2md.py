@@ -21,6 +21,16 @@ except ImportError:
 
 
 BOX_WIDTH = 66
+SLIDE_TYPE_PREFIX = "slide-type:"
+
+
+def detect_slide_type(slide):
+    """Recover the slide type stored by `md2pptx.py` (returns None if absent)."""
+    for shape in slide.shapes:
+        name = getattr(shape, "name", "") or ""
+        if name.startswith(SLIDE_TYPE_PREFIX):
+            return name[len(SLIDE_TYPE_PREFIX):].strip() or None
+    return None
 
 
 def extract_slide_text(slide):
@@ -100,23 +110,28 @@ def convert(pptx_path, md_path):
         if not texts:
             continue
 
+        slide_type = detect_slide_type(slide)
         title = guess_title(texts)
         # Remove the title from content to avoid duplication
         body_texts = [t for t in texts if t != title]
 
-        # Flatten and wrap body text
-        all_body = " ".join(body_texts)
-        wrapped_lines = wrap_text(all_body)
+        # Keep source paragraphs as separate lines, wrapping only overflows.
+        lines = [title]
+        for t in body_texts:
+            lines.extend(wrap_text(t))
 
         slide_num += 1
         md_lines.append(f"## Slide {slide_num}. {title}")
         md_lines.append("")
-        md_lines.append("```slide")
-        md_lines.append(make_ascii_box(wrapped_lines))
+        fence = f"```slide:{slide_type}" if slide_type else "```slide"
+        md_lines.append(fence)
+        md_lines.append(make_ascii_box(lines))
         md_lines.append("```")
+        md_lines.append("")
         if notes:
-            md_lines.append("")
             md_lines.append(f"__Comment:__ {notes}")
+        else:
+            md_lines.append("__Comment:__")
         md_lines.append("")
 
     content = "\n".join(md_lines)
