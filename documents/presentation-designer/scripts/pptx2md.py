@@ -113,13 +113,10 @@ def wrap_text(text, width=BOX_WIDTH - 4):
 
 
 def wrap_with_marker(text, alignment):
-    """Wrap a paragraph, prefixing the alignment marker on the first line."""
+    """Wrap a paragraph, prefixing every line with its alignment marker."""
     marker = _marker(alignment)
     wrapped = wrap_text(text, width=BOX_WIDTH - 4 - len(marker))
-    if not wrapped:
-        return []
-    wrapped[0] = marker + wrapped[0]
-    return wrapped
+    return [marker + line for line in wrapped]
 
 
 def convert(pptx_path, md_path):
