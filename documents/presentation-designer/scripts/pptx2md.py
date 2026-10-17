@@ -135,13 +135,11 @@ def convert(pptx_path, md_path):
         texts = [t for t, _ in lines_info]
         title = guess_title(texts)
 
-        lines = []
-        title_used = False
-        for t, al in lines_info:
-            if not title_used and t == title:
-                lines.append(_marker(al) + t)
-                title_used = True
-            else:
+        title_index = next(i for i, (t, _) in enumerate(lines_info) if t == title)
+        title_text, title_alignment = lines_info[title_index]
+        lines = [_marker(title_alignment) + title_text]
+        for i, (t, al) in enumerate(lines_info):
+            if i != title_index:
                 lines.extend(wrap_with_marker(t, al))
 
         slide_num += 1
