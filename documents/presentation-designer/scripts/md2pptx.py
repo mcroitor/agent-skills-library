@@ -32,7 +32,7 @@ except ImportError:
     print("Error: python-pptx is required. Install with: pip install python-pptx")
     sys.exit(1)
 
-STYLES_PATH = Path(__file__).resolve().parent.parent / "styles.json"
+STYLES_PATH = Path(__file__).resolve().parent.parent / "assets/styles.json"
 DEFAULT_STYLE = "academic"
 SLIDE_TYPE_PREFIX = "slide-type:"
 
@@ -88,16 +88,15 @@ def parse_markdown(filepath):
                 f"lines instead of 15."
             )
 
-        # Extract the comment: everything after the `__Comment__` marker.
-        # The colon may sit before or after the trailing underscores
-        # (`__Comment__:` or `__Comment__:`), so locate `__Comment`,
-        # find the next colon, and strip leading underscores/whitespace.
+        # Extract the comment: everything after the `__Comment:__` marker
+        # up to the next slide header or end of file, then strip the leading
+        # underscores/whitespace and any trailing blank lines.
         comment = ""
         cidx = chunk.find("__Comment")
         if cidx != -1:
             colon = chunk.find(":", cidx)
             if colon != -1:
-                comment = re.sub(r"^[\s_]+", "", chunk[colon + 1:])
+                comment = re.sub(r"^[\s_]+", "", chunk[colon + 1:]).strip()
 
         slides.append(
             {
