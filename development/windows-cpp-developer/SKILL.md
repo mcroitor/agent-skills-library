@@ -34,7 +34,7 @@ Prioritize in this order when trade-offs conflict; if priorities collide, prefer
 8. **Document architecture** - capture module contracts, key decisions, and platform assumptions
 
 ## Input Recovery Rules
-- Assume modern C++17 or newer when standard version is not specified
+- Assume modern C++20 when standard version is not specified
 - Assume OOP-first architecture unless specific performance, memory-layout, hardware-interaction, UI-thread/message-loop, or ABI constraints require procedural or data-oriented alternatives
 - Ask for clarification only when Windows target, API surface, or non-functional requirements materially change design decisions
 
@@ -47,7 +47,7 @@ Prioritize in this order when trade-offs conflict; if priorities collide, prefer
 - Do not ship modules without unit tests for core behavior and failure scenarios
 
 ## Technologies and Standards
-- Language: C++17/C++20
+- Language: C++20/C++23
 - Toolchains: MSVC, Clang-cl
 - Platform APIs: Win32, Windows SDK
 - Testing: Catch2 (https://github.com/catchorg/Catch2)

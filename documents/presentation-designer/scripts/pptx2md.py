@@ -15,6 +15,7 @@ from pathlib import Path
 
 try:
     from pptx import Presentation
+    from pptx.enum.text import PP_ALIGN
 except ImportError:
     print("Error: python-pptx is required. Install with: pip install python-pptx")
     sys.exit(1)
@@ -22,6 +23,19 @@ except ImportError:
 
 BOX_WIDTH = 66
 SLIDE_TYPE_PREFIX = "slide-type:"
+
+
+def _marker(alignment):
+    """Map a PPTX paragraph alignment to the skill's inline marker.
+
+    LEFT (and inherited) yields no marker because LEFT is the default;
+    RIGHT -> `>>`, CENTER -> `=`.
+    """
+    if alignment == PP_ALIGN.RIGHT:
+        return ">>"
+    if alignment == PP_ALIGN.CENTER:
+        return "="
+    return ""
 
 
 def detect_slide_type(slide):
@@ -33,15 +47,16 @@ def detect_slide_type(slide):
     return None
 
 
-def extract_slide_text(slide):
-    texts = []
+def extract_slide_lines(slide):
+    """Return [(text, pptx_alignment), ...] for each non-empty paragraph."""
+    out = []
     for shape in slide.shapes:
         if shape.has_text_frame:
             for para in shape.text_frame.paragraphs:
                 t = para.text.strip()
                 if t:
-                    texts.append(t)
-    return texts
+                    out.append((t, para.alignment))
+    return out
 
 
 def get_speaker_notes(slide):
@@ -97,6 +112,13 @@ def wrap_text(text, width=BOX_WIDTH - 4):
     return lines if lines else [text]
 
 
+def wrap_with_marker(text, alignment):
+    """Wrap a paragraph, prefixing every line with its alignment marker."""
+    marker = _marker(alignment)
+    wrapped = wrap_text(text, width=BOX_WIDTH - 4 - len(marker))
+    return [marker + line for line in wrapped]
+
+
 def convert(pptx_path, md_path):
     prs = Presentation(pptx_path)
     slides = prs.slides
@@ -104,21 +126,21 @@ def convert(pptx_path, md_path):
     slide_num = 0
 
     for slide in slides:
-        texts = extract_slide_text(slide)
+        lines_info = extract_slide_lines(slide)
+        if not lines_info:
+            continue
         notes = get_speaker_notes(slide)
 
-        if not texts:
-            continue
-
         slide_type = detect_slide_type(slide)
+        texts = [t for t, _ in lines_info]
         title = guess_title(texts)
-        # Remove the title from content to avoid duplication
-        body_texts = [t for t in texts if t != title]
 
-        # Keep source paragraphs as separate lines, wrapping only overflows.
-        lines = [title]
-        for t in body_texts:
-            lines.extend(wrap_text(t))
+        title_index = next(i for i, (t, _) in enumerate(lines_info) if t == title)
+        title_text, title_alignment = lines_info[title_index]
+        lines = [_marker(title_alignment) + title_text]
+        for i, (t, al) in enumerate(lines_info):
+            if i != title_index:
+                lines.extend(wrap_with_marker(t, al))
 
         slide_num += 1
         md_lines.append(f"## Slide {slide_num}. {title}")

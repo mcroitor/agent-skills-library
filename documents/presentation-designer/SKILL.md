@@ -4,7 +4,7 @@ description: Helps to create a Markdown presentation from a scientific paper or 
 compatibility: Python 3.8+ with python-pptx (pip install python-pptx)
 metadata:
   author: Mihail Croitor
-  version: "1.2"
+  version: "1.3"
 ---
 
 # Presentation Designer
@@ -53,7 +53,7 @@ Designs structured slide decks from dense source material (papers, lessons) usin
 
 ## Presentation Styles
 
-The `md2pptx.py` script applies a visual style to every slide (background fill, text color, and font). Styles are defined in `styles.json` and selected with the `--style` flag. **`academic` is the default.**
+The `md2pptx.py` script applies a visual style to every slide (background fill, text color, and font). Styles are defined in `assets/styles.json` and selected with the `--style` flag. **`academic` is the default.**
 
 | Style      | Background | Foreground | Font           | Intended use                          |
 | ---------- | ---------- | ---------- | -------------- | ------------------------------------- |
@@ -62,7 +62,7 @@ The `md2pptx.py` script applies a visual style to every slide (background fill, 
 | `minimal`  | `#FFFFFF`  | `#000000`  | JetBrains Mono | Clean, print-friendly                 |
 
 - **Font fallback**: `JetBrains Mono` is set on every text run. PPTX stores a single font name per run, so no fallback chain is encoded. If the font is not installed on the viewer's machine, PowerPoint substitutes its own default font. Install JetBrains Mono on machines that open the deck for the intended look.
-- **Adding a style**: Add a new entry to `styles.json` with `background`, `foreground` (hex), and `font` keys; it becomes available to `--style` automatically.
+- **Adding a style**: Add a new entry to `assets/styles.json` with `background`, `foreground` (hex), and `font` keys; it becomes available to `--style` automatically.
 
 ## Best Practices
 
