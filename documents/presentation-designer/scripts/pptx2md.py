@@ -113,13 +113,10 @@ def wrap_text(text, width=BOX_WIDTH - 4):
 
 
 def wrap_with_marker(text, alignment):
-    """Wrap a paragraph, prefixing the alignment marker on the first line."""
+    """Wrap a paragraph, prefixing every line with its alignment marker."""
     marker = _marker(alignment)
     wrapped = wrap_text(text, width=BOX_WIDTH - 4 - len(marker))
-    if not wrapped:
-        return []
-    wrapped[0] = marker + wrapped[0]
-    return wrapped
+    return [marker + line for line in wrapped]
 
 
 def convert(pptx_path, md_path):
@@ -138,13 +135,11 @@ def convert(pptx_path, md_path):
         texts = [t for t, _ in lines_info]
         title = guess_title(texts)
 
-        lines = []
-        title_used = False
-        for t, al in lines_info:
-            if not title_used and t == title:
-                lines.append(_marker(al) + t)
-                title_used = True
-            else:
+        title_index = next(i for i, (t, _) in enumerate(lines_info) if t == title)
+        title_text, title_alignment = lines_info[title_index]
+        lines = [_marker(title_alignment) + title_text]
+        for i, (t, al) in enumerate(lines_info):
+            if i != title_index:
                 lines.extend(wrap_with_marker(t, al))
 
         slide_num += 1
