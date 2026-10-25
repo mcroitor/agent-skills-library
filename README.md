@@ -37,6 +37,14 @@ Prompt and context engineering for reliable LLM outputs.
 - Prompt quality evaluation and benchmarking
 - RAG-aware prompting and guardrails
 
+#### 1.4. Skill Creator (`ai/skill-creator/SKILL.md`)
+
+Create and validate agent skills against the repository specification.
+
+- Turn ideas, prompts, workflows, and checklists into reusable skills
+- Review and improve existing skills and their descriptions
+- Validate structure, frontmatter, resources, and discoverability
+
 ### 2. Common
 
 #### 2.1. Brainstorming (`common/brainstorming/SKILL.md`)
@@ -254,6 +262,14 @@ Text extraction and structuring from scanned documents, images, and PDFs.
 - Multilingual text recognition
 - Layout-aware extraction and normalization
 - Quality validation and reproducible output settings
+
+#### 4.7. Scientific Paper Analyst (`documents/scientific-paper-analyst/SKILL.md`)
+
+Evidence-focused analysis of scientific papers and comparison of study findings.
+
+- Extract study designs, samples, methods, outcomes, and limitations
+- Assess evidence against a research question or hypothesis
+- Synthesize comparable studies with source-traceable conclusions
 
 ### 5. Education
 
