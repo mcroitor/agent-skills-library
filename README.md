@@ -271,6 +271,15 @@ Evidence-focused analysis of scientific papers and comparison of study findings.
 - Assess evidence against a research question or hypothesis
 - Synthesize comparable studies with source-traceable conclusions
 
+#### 4.8. Research Source Finder (`documents/research-source-finder/SKILL.md`)
+
+Research literature discovery, citation-based ranking, legal full-text retrieval, and ISO 690:2021 bibliography preparation.
+
+- Search scholarly indexes and book catalogs
+- Rank relevant works using reported citation counts
+- Retrieve open or otherwise legitimately accessible full texts
+- Produce reproducible search logs and linked bibliographies
+
 ### 5. Education
 
 #### 5.1. Learning Path Designer (`education/learning-path-designer/SKILL.md`)
@@ -350,95 +359,17 @@ Test automation and unit, integration, and e2e test development.
 - CI/CD integration
 - Code coverage metrics
 
-## Folder Structure
+## Pipelines
 
-```text
-<repo_root>/
-├── cspell.json
-├── README.md (this file)
-├── README.ru.md
-├── ai/
-│   ├── ai-product-manager/
-│   │   └── SKILL.md
-│   ├── ai-prompt-engineer/
-│   │   └── SKILL.md
-│   └── ai-specialist/
-│       └── SKILL.md
-├── common/
-│   ├── brainstorming/
-│   │   └── SKILL.md
-│   ├── communication-adapter/
-│   │   └── SKILL.md
-│   ├── problem-decomposer/
-│   │   └── SKILL.md
-│   └── research-synthesizer/
-│       └── SKILL.md
-├── development/
-│   ├── architect/
-│   │   └── SKILL.md
-│   ├── bootstrap-designer/
-│   │   └── SKILL.md
-│   ├── cpp-developer/
-│   │   └── SKILL.md
-│   ├── database-developer/
-│   │   └── SKILL.md
-│   ├── devops-engineer/
-│   │   └── SKILL.md
-│   ├── frontend-designer/
-│   │   └── SKILL.md
-│   ├── linux-cpp-developer/
-│   │   └── SKILL.md
-│   ├── mariadb-administrator/
-│   │   └── SKILL.md
-│   ├── moodle-developer/
-│   │   └── SKILL.md
-│   ├── php-developer/
-│   │   └── SKILL.md
-│   ├── skeleton-designer/
-│   │   ├── assets/
-│   │   │   ├── normalize.css
-│   │   │   └── skeleton.css
-│   │   └── SKILL.md
-│   ├── tailwind-designer/
-│   │   └── SKILL.md
-│   ├── web-developer/
-│   │   └── SKILL.md
-│   └── windows-cpp-developer/
-│       └── SKILL.md
-├── documents/
-│   ├── academic-manuscript-editor/
-│   │   └── SKILL.md
-│   ├── ocr-specialist/
-│   │   └── SKILL.md
-│   ├── research-writing-assistant/
-│   │   └── SKILL.md
-│   ├── scientific-writing-editor/
-│   │   └── SKILL.md
-│   ├── technical-documentation-specialist/
-│   │   └── SKILL.md
-│   └── translator/
-│       └── SKILL.md
-├── education/
-│   ├── assessment-writer/
-│   │   └── SKILL.md
-│   ├── course-localization-specialist/
-│   │   └── SKILL.md
-│   ├── curriculum-developer/
-│   │   └── SKILL.md
-│   ├── educational-content-reviewer/
-│   │   └── SKILL.md
-│   ├── learning-path-designer/
-│   │   └── SKILL.md
-│   ├── rubric-designer/
-│   │   └── SKILL.md
-│   └── quiz-developer/
-│       └── SKILL.md
-└── testing/
-    ├── test-scenario-writer/
-    │   └── SKILL.md
-    └── test-writer/
-        └── SKILL.md
-```
+Pipelines describe multi-stage workflows that coordinate skills, define stage handoffs, and set quality gates.
+
+- [Scientific Article Preparation](./_pipelines/write-an-article/AGENTS.md) - defines the workflow from research framing and source discovery through analysis, article preparation, and independent review, including revision and completion criteria.
+
+## Skill Tests
+
+Skill tests are reusable prompt scenarios. Use them to manually check whether a skill follows its instructions across representative cases; these prompt files are evaluation scenarios, not automatically executable tests.
+
+- [Research Source Finder test scenarios](./_tests/documents/research-source-finder/) - cover direct comparative research, an interdisciplinary topic with structured metadata export, and a narrow topic where few or no directly relevant sources may exist.
 
 ## How to Use
 

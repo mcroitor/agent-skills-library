@@ -271,6 +271,15 @@
 - Оценка доказательств в контексте исследовательского вопроса или гипотезы
 - Синтез сопоставимых исследований с выводами, связанными с источниками
 
+#### 4.8. Research Source Finder (`documents/research-source-finder/SKILL.md`)
+
+Поиск научной литературы, ранжирование по данным о цитировании, получение легально доступных полных текстов и оформление библиографии по ISO 690:2021.
+
+- Поиск в научных индексах и каталогах книг
+- Ранжирование релевантных работ по опубликованным показателям цитирования
+- Получение открытых или иным образом легально доступных полных текстов
+- Воспроизводимый журнал поиска и библиография со ссылками
+
 ### 5. Education
 
 #### 5.1. Learning Path Designer (`education/learning-path-designer/SKILL.md`)
@@ -350,95 +359,17 @@
 - CI/CD интеграция
 - Code coverage метрики
 
-## Структура папок
+## Конвейеры
 
-```text
-<repo_root>/
-├── cspell.json
-├── README.md
-├── README.ru.md (этот файл)
-├── ai/
-│   ├── ai-product-manager/
-│   │   └── SKILL.md
-│   ├── ai-prompt-engineer/
-│   │   └── SKILL.md
-│   └── ai-specialist/
-│       └── SKILL.md
-├── common/
-│   ├── brainstorming/
-│   │   └── SKILL.md
-│   ├── communication-adapter/
-│   │   └── SKILL.md
-│   ├── problem-decomposer/
-│   │   └── SKILL.md
-│   └── research-synthesizer/
-│       └── SKILL.md
-├── development/
-│   ├── architect/
-│   │   └── SKILL.md
-│   ├── bootstrap-designer/
-│   │   └── SKILL.md
-│   ├── cpp-developer/
-│   │   └── SKILL.md
-│   ├── database-developer/
-│   │   └── SKILL.md
-│   ├── devops-engineer/
-│   │   └── SKILL.md
-│   ├── frontend-designer/
-│   │   └── SKILL.md
-│   ├── linux-cpp-developer/
-│   │   └── SKILL.md
-│   ├── mariadb-administrator/
-│   │   └── SKILL.md
-│   ├── moodle-developer/
-│   │   └── SKILL.md
-│   ├── php-developer/
-│   │   └── SKILL.md
-│   ├── skeleton-designer/
-│   │   ├── assets/
-│   │   │   ├── normalize.css
-│   │   │   └── skeleton.css
-│   │   └── SKILL.md
-│   ├── tailwind-designer/
-│   │   └── SKILL.md
-│   ├── web-developer/
-│   │   └── SKILL.md
-│   └── windows-cpp-developer/
-│       └── SKILL.md
-├── documents/
-│   ├── academic-manuscript-editor/
-│   │   └── SKILL.md
-│   ├── ocr-specialist/
-│   │   └── SKILL.md
-│   ├── research-writing-assistant/
-│   │   └── SKILL.md
-│   ├── scientific-writing-editor/
-│   │   └── SKILL.md
-│   ├── technical-documentation-specialist/
-│   │   └── SKILL.md
-│   └── translator/
-│       └── SKILL.md
-├── education/
-│   ├── assessment-writer/
-│   │   └── SKILL.md
-│   ├── course-localization-specialist/
-│   │   └── SKILL.md
-│   ├── curriculum-developer/
-│   │   └── SKILL.md
-│   ├── educational-content-reviewer/
-│   │   └── SKILL.md
-│   ├── learning-path-designer/
-│   │   └── SKILL.md
-│   ├── rubric-designer/
-│   │   └── SKILL.md
-│   └── quiz-developer/
-│       └── SKILL.md
-└── testing/
-    ├── test-scenario-writer/
-    │   └── SKILL.md
-    └── test-writer/
-        └── SKILL.md
-```
+Конвейеры описывают многоэтапные рабочие процессы: задают последовательность этапов, передачу результатов между навыками и контрольные критерии качества.
+
+- [Подготовка научной статьи](./_pipelines/write-an-article/AGENTS.md) — процесс от формулировки исследования и поиска источников до анализа, подготовки статьи и независимого рецензирования, включая критерии доработки и завершения.
+
+## Тесты навыков
+
+Тесты навыков — повторно используемые сценарии-запросы для ручной проверки поведения навыка на разных типовых случаях; эти prompt-файлы являются сценариями оценки, а не автоматически запускаемыми тестами.
+
+- [Сценарии для Research Source Finder](./_tests/documents/research-source-finder/) — проверяют поиск прямых сравнительных исследований, междисциплинарную тему со структурированным экспортом метаданных и узкую тему, по которой может найтись мало или не найтись прямых источников.
 
 ## Как использовать
 
