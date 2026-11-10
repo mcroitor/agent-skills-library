@@ -31,12 +31,12 @@ These thresholds apply **identically** whether you use unweighted or weighted sc
 
 ---
 
-### 80–89%: Good
+### 85–89%: Good
 
 **Decision:** Accept (or Minor Revision)
 
 **Typical profile:**
-- Most criteria 3–4; 1–2 criteria at 2
+- Most criteria 3–4; a criterion at 2 is rare
 - Minor gaps in clarity or minor methodological concerns
 - Contributions are clear but not groundbreaking
 - Ready for publication after small revisions
@@ -46,15 +46,15 @@ These thresholds apply **identically** whether you use unweighted or weighted sc
 
 ---
 
-### 75–79%: Acceptable with Minor Issues
+### 75–84%: Acceptable with Notable Issues
 
-**Decision:** Minor Revision
+**Decision:** Major Revision
 
 **Typical profile:**
 - Mix of 3–4 and 2 scores; possibly one criterion at 1 with strong justification
-- Certain sections need clarity (e.g., methods, presentation)
+- Certain sections need improvement (e.g., methods, presentation)
 - Contribution is solid despite gaps
-- Likely to be accepted after revision
+- Not publishable as-is; revision required
 
 **Editor commentary:**
 > The paper presents interesting findings and is generally well-executed. Please revise the following sections to improve clarity: [list]. We anticipate these revisions will address reviewer concerns.

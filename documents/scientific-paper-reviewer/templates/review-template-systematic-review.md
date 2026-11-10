@@ -112,7 +112,7 @@ $$\text{Score \%} = \frac{\text{Weighted Sum}}{4.0} \times 100\% = \text{_______
 
 **Recommendation:**
 - [ ] **Accept** (85–100%)
-- [ ] **Minor Revision** (80–100%)
+- [ ] **Minor Revision** (85–100%)
 - [ ] **Major Revision** (65–84%)
 - [ ] **Reject** (<65% or critical flaws)
 
